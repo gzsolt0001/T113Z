@@ -2,10 +2,10 @@
 <schema xmlns="http://www.w3.org/2001/XMLSchema"
         xmlns:common="https://soap.api.nav.gov.hu/definitions/model/2.0/common/1.0"
         xmlns:meta="https://api.nav.gov.hu/definitions/form_xsd_metaschema/1.0"
-        xmlns:tns="https://soap.api.nav.gov.hu/definitions/model/2.0/T113/1.0"
+        xmlns:tns="https://soap.api.nav.gov.hu/definitions/model/2.0/T113/1.1"
         xmlns:xs="http://www.w3.org/2001/XMLSchema"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        targetNamespace="https://soap.api.nav.gov.hu/definitions/model/2.0/T113/1.0">
+        targetNamespace="https://soap.api.nav.gov.hu/definitions/model/2.0/T113/1.1">
    <import namespace="https://api.nav.gov.hu/definitions/form_xsd_metaschema/1.0"
            schemaLocation="form_xsd_metaschema.xsd"/>
    <import namespace="https://soap.api.nav.gov.hu/definitions/model/2.0/common/1.0"
@@ -21,22 +21,6 @@
          <xs:field xpath="fileId"/>
       </xs:unique>
    </element>
-   <complexType name="Doc_T113_Type">
-      <annotation>
-         <documentation>A teljes bizonylat szerkezetet leíró típus</documentation>
-      </annotation>
-      <sequence>
-         <element name="Form_T113"
-                  type="tns:Form_T113_Type"
-                  minOccurs="1"
-                  maxOccurs="1"
-                  meta:metaType="FormMetaType">
-            <annotation>
-               <documentation>T113 részbizonylat</documentation>
-            </annotation>
-         </element>
-      </sequence>
-   </complexType>
    <simpleType name="Enum_T113_0A0001C008A">
       <annotation>
          <documentation>Enum értékek </documentation>
@@ -70,6 +54,77 @@
          <enumeration value="az ügyvezetés egyezőségére tekintettel, illetve közeli hozzátartozók útján"/>
       </restriction>
    </simpleType>
+   <simpleType name="Enum_T113_0BXXXXC012A">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="közvetlen"/>
+         <enumeration value="közvetett"/>
+         <enumeration value="meghatározó befolyás"/>
+         <enumeration value="az ügyvezetés egyezőségére tekintettel, illetve közeli hozzátartozók útján"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_T113_0BXXXXC016A">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="közvetlen"/>
+         <enumeration value="közvetett"/>
+         <enumeration value="meghatározó befolyás"/>
+         <enumeration value="az ügyvezetés egyezőségére tekintettel, illetve közeli hozzátartozók útján"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_T113_0CXXXXC011A">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="közvetlen"/>
+         <enumeration value="közvetett"/>
+         <enumeration value="meghatározó befolyás"/>
+         <enumeration value="az ügyvezetés egyezőségére tekintettel, illetve közeli hozzátartozók útján"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_T113_0CXXXXC015A">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="közvetlen"/>
+         <enumeration value="közvetett"/>
+         <enumeration value="meghatározó befolyás"/>
+         <enumeration value="az ügyvezetés egyezőségére tekintettel, illetve közeli hozzátartozók útján"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_T113_0CXXXXC019A">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="közvetlen"/>
+         <enumeration value="közvetett"/>
+         <enumeration value="meghatározó befolyás"/>
+         <enumeration value="az ügyvezetés egyezőségére tekintettel, illetve közeli hozzátartozók útján"/>
+      </restriction>
+   </simpleType>
+   <complexType name="Doc_T113_Type">
+      <annotation>
+         <documentation>A teljes bizonylat szerkezetet leíró típus</documentation>
+      </annotation>
+      <sequence>
+         <element name="Form_T113"
+                  type="tns:Form_T113_Type"
+                  minOccurs="1"
+                  maxOccurs="1"
+                  meta:metaType="FormMetaType">
+            <annotation>
+               <documentation>T113 részbizonylat</documentation>
+            </annotation>
+         </element>
+      </sequence>
+   </complexType>
    <complexType name="Form_T113_Type">
       <annotation>
          <documentation>A teljes nyomtatvány T113 részbiztonylatának szerkezetét leíró típus.</documentation>
@@ -568,6 +623,14 @@
                   meta:metaType="FieldMetaType">
             <annotation>
                <documentation>Kötelezettséget vállalok az Áfa tv. 8.§ (6) bekezdésében meghatározott kötelezettségek teljesítésére (Köt_váll_nyil_főlap)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001C023A"
+                  minOccurs="0"
+                  type="xs:boolean"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Az Áfatörvény 8/B. § szerinti együttes kapcsolttá válást kívánunk bejelenteni. (együtt_kapcsolttá_válás_bejel)</documentation>
             </annotation>
          </element>
       </all>

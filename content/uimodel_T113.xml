@@ -1,0 +1,1135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<WebUIModel csempeMod="MENU" id="T113" info="Kérelem a csoportos áfaalanyiság választására és a képviselő személyében bekövetkezett változás bejelentésére" mainDocumentId="T113" major="1" minor="1" mukodesiMod="CSEMPES" name="T113" templateType="single" tipus="KERELEM" webDefaultLength="4" webInfo="T113 - Kérelem a csoportos áfaalanyiság választására és a képviselő személyében bekövetkezett változás bejelentésére" webName="T113" webOnell="false">
+    <Form id="T113" name="T113" webDefaultLength="4" webInfo="T113 - Kérelem a csoportos áfaalanyiság választására és a képviselő személyében bekövetkezett változás bejelentésére" webName="T113">
+        <Assistants>
+            <AssistantItem id="ROOT_ASSISTANTITEM" leaf="false" name="Mezők hozzáadása" pos="0"/>
+            <TileAssistants/>
+        </Assistants>
+        <Attachements>
+            <ATCSIZES size="0MB" sum_size="0MB" rsize="2147483647" rsum_size="2147483647"/>
+            <ATTACHEMENT id="1" description="T113 csatolmány" required="0" min_count="0" max_count="0" file_extensions="PDF;ZIP;RAR;ARJ;ACE;GZIP;TAR;CAB;BMP;JPG;JPEG;GIF;TIF;PNG"/>
+        </Attachements>
+        <DynGroup chainId="120045">
+            <ButtonText name="add" value="900000"/>
+            <ButtonText name="remove" value="900001"/>
+        </DynGroup>
+        <DynGroup chainId="120061">
+            <ButtonText name="add" value="900002"/>
+            <ButtonText name="remove" value="900003"/>
+        </DynGroup>
+        <DynamicStructure id="120018" maxCount="9999">
+            <PartIndex fgId="120018" index="0"/>
+        </DynamicStructure>
+        <DynamicStructure id="120019" maxCount="3">
+            <PartIndex fgId="120019" index="0"/>
+        </DynamicStructure>
+        <DynamicStructure id="120059" maxCount="9999">
+            <PartIndex fgId="120059" index="0"/>
+        </DynamicStructure>
+        <DynamicStructure id="120063" maxCount="3">
+            <PartIndex fgId="120063" index="0"/>
+        </DynamicStructure>
+        <FieldGroup defaultGroup="false" index="0" maxCount="0" toggleSwitch="false" type="SIMPLE" fgroupType="NORMAL" id="120010" name="Csoportazonosító" wId="FG1">
+            <Fid>0A0001C001A</Fid>
+            <Fid>3625</Fid>
+            <Layout type="GROUP" wId="FG1_G1">
+                <Layout type="INLINE" wId="FG1_G1_I1">
+                    <Layout fixGrid="false" grid="3" type="INLINE_GROUP" wId="FG1_G1_I1_IG1">
+                        <Field id="0A0001C001A" label="Csoportazonosító szám" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="csopazon" webLength="3" wId="FG1_G1_I1_IG1_F1" calculated="false" default="false" irids="3" mask="########-#-##" maxLength="13" metaType="1"/>
+                    </Layout>
+                    <Layout fixGrid="false" grid="3" type="INLINE_GROUP" wId="FG1_G1_I1_IG2">
+                        <Field id="3625" label="Bejelentő adóazonosító jele" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="Rejtett_Bejelentő_adóazon" webLength="3" wId="FG1_G1_I1_IG2_F1" calculated="true" default="false" irids="3" mask="##########" maxLength="10" metaType="1"/>
+                    </Layout>
+                </Layout>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup defaultGroup="false" index="1" maxCount="0" toggleSwitch="false" type="SIMPLE" webHelp="G_120012.html" fgroupType="NORMAL" id="120012" name="Benyújtás indoka" wId="FG2">
+            <FGFunction btnLabel="Új" name="fgNew"/>
+            <Fid>0A0001C002A</Fid>
+            <Fid>0A0001C003A</Fid>
+            <Fid>0A0001C004A</Fid>
+            <Fid>0A0001C005A</Fid>
+            <Layout type="HORIZONTAL" wId="FG2_H1">
+                <Field id="0A0001C002A" label="Új kérelem" labelPosition="RIGHT" mandatory="false" readonly="false" searcher="false" type="CHECKBOX" vid="újkérelem" webLength="1" wId="FG2_H1_F1" calculated="false" default="false" irids="9" metaType="4"/>
+            </Layout>
+            <Layout type="HORIZONTAL" wId="FG2_H2">
+                <Field id="0A0001C003A" label="A csoportos áfaalanyiság tagjainak a csoporthoz való csatlakozáshoz, illetve a csoportos adóalanyisághoz adott engedély visszavonásához kapcsolatos adatai, nyilatkozatai" labelPosition="RIGHT" mandatory="false" readonly="false" searcher="false" type="CHECKBOX" vid="16potlap" webLength="1" wId="FG2_H2_F1" calculated="false" default="false" irids="9" metaType="4"/>
+            </Layout>
+            <Layout type="HORIZONTAL" wId="FG2_H3">
+                <Field id="0A0001C004A" label="A csoportos áfaalanyiságon kívül maradó adóalany adataihoz, nyilatkozatai" labelPosition="RIGHT" mandatory="false" readonly="false" searcher="false" type="CHECKBOX" vid="17potlap" webLength="1" wId="FG2_H3_F1" calculated="false" default="false" irids="9" metaType="4"/>
+            </Layout>
+            <Layout type="HORIZONTAL" wId="FG2_H4">
+                <Field id="0A0001C005A" label="Képviselő személyében bekövetkezett változás" labelPosition="RIGHT" mandatory="false" readonly="false" searcher="false" type="CHECKBOX" vid="képviselőváltozás" webLength="1" wId="FG2_H4_F1" calculated="false" default="false" irids="9" metaType="4"/>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup defaultGroup="false" index="2" maxCount="0" toggleSwitch="false" type="SIMPLE" webHelp="G_120013.html" fgroupType="NORMAL" id="120013" name="Tagok által kijelölt csoportképviselő adatai" wId="FG3">
+            <Fid>0A0001C008A</Fid>
+            <Fid>0A0001C009A</Fid>
+            <Fid>0A0001C010A</Fid>
+            <Fid>0A0001C011A</Fid>
+            <Fid>0A0001C012A</Fid>
+            <Fid>0A0001C013A</Fid>
+            <Layout type="GROUP" wId="FG3_G1">
+                <Layout type="INLINE" wId="FG3_G1_I1">
+                    <Layout fixGrid="false" type="INLINE_GROUP_HORIZONTAL" wId="FG3_G1_I1_IGH1">
+                        <Field id="0A0001C008A" label="Új csoportos áfa adóalany létrehozására és csoportazonosító szám megállapítását kérem/a csoportképviselő törlését kérem" labelGrid="11" labelPosition="LEFT" mandatory="false" readonly="false" searcher="false" type="COMBOBOX" vid="UT" webLength="1" wId="FG3_G1_I1_IGH1_F1" calculated="false" default="false" dynList="false" irids="6" mask="#" maxLength="1" metaType="1" validation="true" valuesListIndex="1"/>
+                    </Layout>
+                </Layout>
+            </Layout>
+            <Layout type="GROUP" wId="FG3_G2">
+                <Layout type="INLINE" wId="FG3_G2_I1">
+                    <Layout fixGrid="false" grid="8" type="INLINE_GROUP" wId="FG3_G2_I1_IG1">
+                        <Field id="0A0001C009A" label="A csoportképviselő teljes neve (elnevezése)" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="képviselő_neve" webLength="8" wId="FG3_G2_I1_IG1_F1" calculated="false" default="false" irids="8" maxLength="150" metaType="1"/>
+                    </Layout>
+                    <Layout fixGrid="false" grid="2" type="INLINE_GROUP" wId="FG3_G2_I1_IG2">
+                        <Field id="0A0001C010A" label="Adószáma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="képviselő_adószáma" webLength="2" wId="FG3_G2_I1_IG2_F1" calculated="false" default="false" irids="3" mask="########-#-##" maxLength="13" metaType="1"/>
+                    </Layout>
+                    <Layout fixGrid="false" grid="2" type="INLINE_GROUP" wId="FG3_G2_I1_IG3">
+                        <Field id="0A0001C011A" label="Közösségi adószáma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="képviselő_közösségi_adószáma" webLength="2" wId="FG3_G2_I1_IG3_F1" calculated="false" default="false" irids="5" mask="##########" maxLength="10" metaType="1"/>
+                    </Layout>
+                    <Layout fixGrid="false" grid="6" type="INLINE_GROUP_HORIZONTAL" wId="FG3_G2_I1_IGH4">
+                        <Field id="0A0001C012A" label="A csoporttagok képviseletét vállalom" labelGrid="5" labelPosition="RIGHT" mandatory="false" readonly="false" searcher="false" type="CHECKBOX" vid="képviseletet_vállal" webLength="1" wId="FG3_G2_I1_IGH4_F1" calculated="false" default="false" irids="9" metaType="4"/>
+                    </Layout>
+                    <Layout fixGrid="false" grid="6" type="INLINE_GROUP_HORIZONTAL" wId="FG3_G2_I1_IGH5">
+                        <Field id="0A0001C013A" label="A csoporttagok képviseletét a továbbiakban nem vállalom" labelGrid="5" labelPosition="RIGHT" mandatory="false" readonly="false" searcher="false" type="CHECKBOX" vid="képviseletet_nem_vállal" webLength="1" wId="FG3_G2_I1_IGH5_F1" calculated="false" default="false" irids="9" metaType="4"/>
+                    </Layout>
+                </Layout>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup defaultGroup="false" index="3" maxCount="0" toggleSwitch="false" type="SIMPLE" webHelp="G_120014.html" fgroupType="NORMAL" id="120014" name="Csoporttagok által kijelölt új csoportképviselő adatai" wId="FG4">
+            <Fid>0A0001C014A</Fid>
+            <Fid>0A0001C015A</Fid>
+            <Fid>0A0001C016A</Fid>
+            <Fid>0A0001C017A</Fid>
+            <Layout type="GROUP" wId="FG4_G1">
+                <Layout type="INLINE" wId="FG4_G1_I1">
+                    <Layout fixGrid="false" grid="10" type="INLINE_GROUP" wId="FG4_G1_I1_IG1">
+                        <Field id="0A0001C014A" label="A csoportképviselő teljes neve (elnevezése)" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="új_képviselő_neve" webLength="10" wId="FG4_G1_I1_IG1_F1" calculated="false" default="false" irids="8" maxLength="150" metaType="1"/>
+                    </Layout>
+                    <Layout fixGrid="false" grid="2" type="INLINE_GROUP" wId="FG4_G1_I1_IG2">
+                        <Field id="0A0001C015A" label="Adószáma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="új_képviselő_adószáma" webLength="2" wId="FG4_G1_I1_IG2_F1" calculated="false" default="false" irids="3" mask="########-#-##" maxLength="13" metaType="1"/>
+                    </Layout>
+                    <Layout fixGrid="false" grid="4" type="INLINE_GROUP_HORIZONTAL" wId="FG4_G1_I1_IGH3">
+                        <Field id="0A0001C016A" label="A csoporttagok képviseletét vállalom" labelGrid="3" labelPosition="RIGHT" mandatory="false" readonly="false" searcher="false" type="CHECKBOX" vid="új_képviseletet_vállal" webLength="1" wId="FG4_G1_I1_IGH3_F1" calculated="false" default="false" irids="9" metaType="4"/>
+                    </Layout>
+                    <Layout fixGrid="false" type="INLINE_GROUP_HORIZONTAL" wId="FG4_G1_I1_IGH4">
+                        <Field id="0A0001C017A" label="A csoportképviselő személyében bekövetkezett változás időpontja" labelGrid="6" labelPosition="LEFT" mandatory="false" readonly="false" searcher="false" type="DATE" vid="változás_dátuma" webLength="2" wId="FG4_G1_I1_IGH4_F1" calculated="false" default="false" irids="3" mask="####.##.##" maxLength="8" metaType="2"/>
+                    </Layout>
+                </Layout>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup defaultGroup="false" index="4" maxCount="0" toggleSwitch="false" type="SIMPLE" fgroupType="NORMAL" id="120015" name="Új csoportos áfa alanyiság kérelmezése" wId="FG5">
+            <Fid>0A0001C018A</Fid>
+            <Fid>0A0001C019A</Fid>
+            <Fid>0A0001C020A</Fid>
+            <Fid>0A0001C021A</Fid>
+            <Fid>0A0001C022A</Fid>
+            <Fid>0A0001C023A</Fid>
+            <Layout type="HORIZONTAL" wId="FG5_H1">
+                <Field id="0A0001C018A" label="Kérem a csoport részére közösségi adószám megállapítását" labelPosition="RIGHT" mandatory="false" readonly="false" searcher="false" type="CHECKBOX" vid="közösségi_adószámot_kér" webLength="1" wId="FG5_H1_F1" calculated="false" default="false" irids="9" metaType="4"/>
+            </Layout>
+            <Layout type="HORIZONTAL" wId="FG5_H2">
+                <Field id="0A0001C019A" label="Kérem a csoportos áfaalanyiság engedélyezését és a csoportazonosító szám megállapítását" labelPosition="RIGHT" mandatory="false" readonly="false" searcher="false" type="CHECKBOX" vid="csoport_azonosítót_kér" webLength="1" wId="FG5_H2_F1" calculated="false" default="false" irids="9" metaType="4"/>
+            </Layout>
+            <Layout type="HORIZONTAL" wId="FG5_H3">
+                <Field id="0A0001C020A" label="A csoport létrehozásának időpontja" labelPosition="LEFT" mandatory="false" readonly="false" searcher="false" type="DATE" vid="csoport_létrehoz_ideje" webLength="2" wId="FG5_H3_F1" calculated="false" default="false" irids="3" mask="####.##.##" maxLength="8" metaType="2"/>
+            </Layout>
+            <Layout type="HORIZONTAL" wId="FG5_H4">
+                <Field id="0A0001C021A" label="Nyilatkozzuk, hogy nyilvántartási rendszerünk alkalmas a belső és külső kapcsolatok egyértelmű, megbízható és maradéktalan elkülönítésére." labelPosition="RIGHT" mandatory="false" readonly="false" searcher="false" type="CHECKBOX" vid="csop_nyil_kapcs_elkülön" webLength="2" wId="FG5_H4_F1" calculated="false" default="false" irids="9" metaType="4"/>
+            </Layout>
+            <Layout type="HORIZONTAL" wId="FG5_H5">
+                <Field id="0A0001C022A" label="Kötelezettséget vállalok az Áfa tv. 8.§ (6) bekezdésében  meghatározott kötelezettségek teljesítésére" labelPosition="RIGHT" mandatory="false" readonly="false" searcher="false" type="CHECKBOX" vid="Köt_váll_nyil_főlap" webLength="1" wId="FG5_H5_F1" calculated="false" default="false" irids="9" metaType="4"/>
+            </Layout>
+            <Layout type="HORIZONTAL" wId="FG5_H6">
+                <Field id="0A0001C023A" label="Az Áfatörvény 8/B. § szerinti együttes kapcsolttá válást kívánunk bejelenteni." labelPosition="RIGHT" mandatory="false" readonly="false" searcher="false" type="CHECKBOX" vid="együtt_kapcsolttá_válás_bejel" webLength="1" wId="FG5_H6_F1" calculated="false" default="false" irids="9" metaType="4"/>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup defaultGroup="false" index="5" maxCount="0" toggleSwitch="false" type="SIMPLE" webHelp="G_120016.html" fgroupType="NORMAL" id="120016" name="Adatlapot benyújtó ügyintéző neve és telefonszáma" wId="FG6">
+            <Fid>0A0001C024A</Fid>
+            <Fid>0A0001C025A</Fid>
+            <Layout type="GROUP" wId="FG6_G1">
+                <Layout type="INLINE" wId="FG6_G1_I1">
+                    <Layout fixGrid="false" grid="6" type="INLINE_GROUP" wId="FG6_G1_I1_IG1">
+                        <Field id="0A0001C024A" label="Ügyintéző neve" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="Ügyintéző_neve" webLength="6" wId="FG6_G1_I1_IG1_F1" calculated="false" default="false" irids="7" maxLength="120" metaType="1"/>
+                    </Layout>
+                    <Layout fixGrid="false" grid="6" type="INLINE_GROUP" wId="FG6_G1_I1_IG2">
+                        <Field id="0A0001C025A" label="Telefonszáma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="Ügyintéző_telefonszáma" webLength="6" wId="FG6_G1_I1_IG2_F1" calculated="false" default="false" irids="8" maxLength="20" metaType="1"/>
+                    </Layout>
+                </Layout>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup chainId="120043" chainView="HORIZONTAL" clientSdgId="120042" defaultGroup="false" index="-1" maxCount="9999" nextId="120018" sdgId="120042" sdgRole="HEADER" toggleSwitch="true" type="DYNAMIC" webHelp="G_120018.html" fgroupType="NORMAL" id="120018" name="Csoporttag adatai" wId="FG7">
+            <Fid>0BXXXXC003A</Fid>
+            <Fid>0BXXXXC004A</Fid>
+            <Fid>0BXXXXC005A</Fid>
+            <EnabledView>HORIZONTAL</EnabledView>
+            <EnabledView>VERTICAL</EnabledView>
+            <Layout label="Csoporttag adatai" type="SUBTITLE" wId="FG7_ST1">
+                <Layout type="GROUP" wId="FG7_ST1_G1">
+                    <Layout type="INLINE" wId="FG7_ST1_G1_I1">
+                        <Layout fixGrid="false" grid="8" type="INLINE_GROUP" wId="FG7_ST1_G1_I1_IG1">
+                            <Field id="0BXXXXC003A" label="Teljes neve (elnevezése)" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="csoporttag_neve" webLength="8" wId="FG7_ST1_G1_I1_IG1_F1" calculated="false" default="false" irids="8" maxLength="150" metaType="1"/>
+                        </Layout>
+                        <Layout fixGrid="false" grid="2" type="INLINE_GROUP" wId="FG7_ST1_G1_I1_IG2">
+                            <Field id="0BXXXXC004A" label="Adószáma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="csoporttag_adószáma" webLength="2" wId="FG7_ST1_G1_I1_IG2_F1" calculated="false" default="false" irids="3" mask="########-#-##" maxLength="13" metaType="1"/>
+                        </Layout>
+                        <Layout fixGrid="false" grid="2" type="INLINE_GROUP" wId="FG7_ST1_G1_I1_IG3">
+                            <Field id="0BXXXXC005A" label="Közösségi adószáma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="csoporttag_közösségi_adószáma" webLength="2" wId="FG7_ST1_G1_I1_IG3_F1" calculated="false" default="false" irids="5" mask="##########" maxLength="10" metaType="1"/>
+                        </Layout>
+                    </Layout>
+                </Layout>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup chainId="120043" chainView="HORIZONTAL" clientSdgId="120042" defaultGroup="false" index="0" maxCount="9999" nextId="120017" position="BOTTOM" sdgId="120042" sdgRole="HEADER" toggleSwitch="true" type="DYNAMIC" fgroupType="EGYEDI_LANC_ELEM" id="120020" name="Csoportos áfa alanyisághoz kapcsolódó nyilatkozatok" parentId="120018" wId="FG8">
+            <Fid>120049</Fid>
+            <Fid>0BXXXXC018A</Fid>
+            <Fid>0BXXXXC019A</Fid>
+            <Fid>0BXXXXC020A</Fid>
+            <Fid>0BXXXXC021A</Fid>
+            <Fid>0BXXXXC022A</Fid>
+            <Fid>0BXXXXC023A</Fid>
+            <Fid>0BXXXXC024A</Fid>
+            <Fid>0BXXXXC025A</Fid>
+            <EnabledView>HORIZONTAL</EnabledView>
+            <EnabledView>VERTICAL</EnabledView>
+            <Layout type="GROUP" wId="FG8_G1">
+                <Layout grid="12" longLabel="false" type="VERTICAL" wId="FG8_G1_V1">
+                    <Field id="120049" label="Csoportos áfaalanyisághoz kapcsolódó nyilatkozatok" mandatory="false" readonly="false" searcher="false" style="text--size-16 text--bold text--align-left" type="LABEL" webLength="12" wId="FG8_G1_V1_F1" calculated="false" default="false" irids="0" metaType="0"/>
+                </Layout>
+            </Layout>
+            <Layout type="HORIZONTAL" wId="FG8_H2">
+                <Field id="0BXXXXC018A" label="Kérem a csoportos áfaalanyiság engedélyezését és a csoportazonosító szám megállapítását" labelPosition="RIGHT" mandatory="false" readonly="false" searcher="false" type="CHECKBOX" vid="közösségi_adószámot_kér_16" webLength="1" wId="FG8_H2_F1" calculated="false" default="false" irids="9" metaType="4"/>
+            </Layout>
+            <Layout type="HORIZONTAL" wId="FG8_H3">
+                <Field id="0BXXXXC019A" label="Kérem a megadott csoportazonosító számú csoporthoz való csatlakozás engedélyezését" labelPosition="RIGHT" mandatory="false" readonly="false" searcher="false" type="CHECKBOX" vid="csatlakozási_engedélyt_kér_16" webLength="1" wId="FG8_H3_F1" calculated="false" default="false" irids="9" metaType="4"/>
+            </Layout>
+            <Layout type="HORIZONTAL" wId="FG8_H4">
+                <Field id="0BXXXXC020A" label="A csoporthoz történő csatlakozás időpontja" labelGrid="6" labelPosition="LEFT" mandatory="false" readonly="false" searcher="false" type="DATE" vid="csoporthoz_csatlakozás_ideje16" webLength="2" wId="FG8_H4_F1" calculated="false" default="false" irids="3" mask="####.##.##" maxLength="8" metaType="2"/>
+            </Layout>
+            <Layout type="HORIZONTAL" wId="FG8_H5">
+                <Field id="0BXXXXC021A" label="Kérem a csoportos áfaalanyiságra adott engedély visszavonását" labelGrid="6" labelPosition="LEFT" mandatory="false" readonly="false" searcher="false" type="COMBOBOX" vid="visszavonást_kér_16" webLength="1" wId="FG8_H5_F1" calculated="false" default="false" dynList="false" irids="3" maxLength="1" metaType="2" validation="true" valuesListIndex="2"/>
+            </Layout>
+            <Layout type="HORIZONTAL" wId="FG8_H6">
+                <Field id="0BXXXXC022A" label="A csoport megszüntetésének időpontja" labelGrid="6" labelPosition="LEFT" mandatory="false" readonly="false" searcher="false" type="DATE" vid="csoport_megszűnés_ideje" webLength="2" wId="FG8_H6_F1" calculated="false" default="false" irids="3" mask="####.##.##" maxLength="8" metaType="2"/>
+            </Layout>
+            <Layout type="HORIZONTAL" wId="FG8_H7">
+                <Field id="0BXXXXC023A" label="Hozzájárulok a fennmaradó áfacsoport fenntartásához" labelPosition="RIGHT" mandatory="false" readonly="false" searcher="false" type="CHECKBOX" vid="hozzájár_áfacsop_fenntart16" webLength="1" wId="FG8_H7_F1" calculated="false" default="false" irids="9" metaType="4"/>
+            </Layout>
+            <Layout type="HORIZONTAL" wId="FG8_H8">
+                <Field id="0BXXXXC024A" label="A fennmaradó áfacsoport  csoportazonosító száma" labelGrid="6" labelPosition="LEFT" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="fennmaradó_áfacsop_csopazon16" webLength="2" wId="FG8_H8_F1" calculated="false" default="false" irids="3" mask="########-#-##" maxLength="13" metaType="1"/>
+            </Layout>
+            <Layout type="HORIZONTAL" wId="FG8_H9">
+                <Field id="0BXXXXC025A" label="Kötelezettséget vállalok az Áfa tv. 8.§ (7) bekezdésében meghatározott kötelezettségek teljesítésére" labelPosition="RIGHT" mandatory="false" readonly="false" searcher="false" type="CHECKBOX" vid="Köt_váll_nyil_Pótlap16" webLength="1" wId="FG8_H9_F1" calculated="false" default="false" irids="9" metaType="4"/>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup chainId="120043" chainView="HORIZONTAL" clientSdgId="120042" defaultGroup="false" index="0" maxCount="9999" nextId="120018" position="TOP" sdgId="120042" sdgRole="HEADER" toggleSwitch="true" type="DYNAMIC" fgroupType="EGYEDI_LANC_ELEM" id="120017" name="Működő csoporthoz új adóalanyként csatlakozom" parentId="120018" wId="FG9">
+            <FGFunction btnLabel="Új csatlakozó" name="fgNew"/>
+            <FGFunction btnLabel="Csatlakozó törlése" name="fgDelete"/>
+            <Fid>0BXXXXC001A</Fid>
+            <Fid>0BXXXXC002A</Fid>
+            <EnabledView>HORIZONTAL</EnabledView>
+            <EnabledView>VERTICAL</EnabledView>
+            <Layout type="GROUP" wId="FG9_G1">
+                <Layout type="INLINE" wId="FG9_G1_I1">
+                    <Layout fixGrid="false" grid="5" type="INLINE_GROUP_HORIZONTAL" wId="FG9_G1_I1_IGH1">
+                        <Field id="0BXXXXC001A" label="Működő csoporthoz új adóalanyként csatlakozom" labelPosition="RIGHT" mandatory="false" readonly="false" searcher="false" type="CHECKBOX" vid="csatlakozik" webLength="1" wId="FG9_G1_I1_IGH1_F1" calculated="false" default="false" irids="9" metaType="4"/>
+                    </Layout>
+                    <Layout fixGrid="false" grid="3" type="INLINE_GROUP" wId="FG9_G1_I1_IG2">
+                        <Field id="0BXXXXC002A" label="Csoportazonosító szám" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="csatlakozó_csopazon" webLength="3" wId="FG9_G1_I1_IG2_F1" calculated="false" default="false" irids="3" mask="########-#-##" maxLength="13" metaType="1"/>
+                    </Layout>
+                </Layout>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup chainId="120045" chainView="HORIZONTAL" clientSdgId="120042" defaultGroup="false" index="-1" maxCount="1" nextId="120047" sdgId="120042" sdgRole="DETAIL" toggleSwitch="true" type="DYNAMIC" fgroupType="NORMAL" id="120019" name="Kapcsolt jogviszony" wId="FG10">
+            <FGFunction btnLabel="Új kapcsolt jogviszony" name="fgNew"/>
+            <FGFunction btnLabel="Kapcsolt jogviszony törlése" name="fgDelete"/>
+            <Fid>0BXXXXC006A</Fid>
+            <Fid>0BXXXXC007A</Fid>
+            <Fid>0BXXXXC008A</Fid>
+            <Fid>0BXXXXC009A</Fid>
+            <EnabledView>HORIZONTAL</EnabledView>
+            <EnabledView>VERTICAL</EnabledView>
+            <Layout type="GROUP" wId="FG10_G1">
+                <Layout type="INLINE" wId="FG10_G1_I1">
+                    <Layout fixGrid="false" grid="10" type="INLINE_GROUP" wId="FG10_G1_I1_IG1">
+                        <Field id="0BXXXXC006A" label="Kapcsolt vállalkozás megnevezése" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="kapcsolt_váll_megnev16_1" webLength="10" wId="FG10_G1_I1_IG1_F1" calculated="false" default="false" irids="8" maxLength="150" metaType="1"/>
+                    </Layout>
+                    <Layout fixGrid="false" grid="2" type="INLINE_GROUP" wId="FG10_G1_I1_IG2">
+                        <Field id="0BXXXXC007A" label="Adószáma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="kapcsolt_váll_adószáma16_1" webLength="2" wId="FG10_G1_I1_IG2_F1" calculated="false" default="false" irids="3" mask="########-#-##" maxLength="13" metaType="1"/>
+                    </Layout>
+                    <Layout fixGrid="false" grid="8" type="INLINE_GROUP" wId="FG10_G1_I1_IG3">
+                        <Field id="0BXXXXC008A" label="Kapcsolat jellege" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="COMBOBOX" vid="kapcsolat_jellege16_1" webLength="8" wId="FG10_G1_I1_IG3_F1" calculated="false" default="false" dynList="false" irids="8" maxLength="120" metaType="1" validation="true" valuesListIndex="3"/>
+                    </Layout>
+                    <Layout fixGrid="false" grid="2" type="INLINE_GROUP" wId="FG10_G1_I1_IG4">
+                        <Field id="0BXXXXC009A" label="Kapcsolat mértéke" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="kapcsolat_mértéke16_1" webLength="2" wId="FG10_G1_I1_IG4_F1" calculated="false" default="false" irids="8" maxLength="60" metaType="1"/>
+                    </Layout>
+                </Layout>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup chainId="120045" chainView="HORIZONTAL" clientSdgId="120042" defaultGroup="false" index="-1" maxCount="1" nextId="120048" sdgId="120042" sdgRole="DETAIL" toggleSwitch="true" type="DYNAMIC" fgroupType="NORMAL" id="120047" name="Kapcsolt jogviszony 2." wId="FG11">
+            <FGFunction btnLabel="Új kapcsolt jogviszony" name="fgNew"/>
+            <FGFunction btnLabel="Kapcsolt jogviszony törlése" name="fgDelete"/>
+            <Fid>0BXXXXC010A</Fid>
+            <Fid>0BXXXXC011A</Fid>
+            <Fid>0BXXXXC012A</Fid>
+            <Fid>0BXXXXC013A</Fid>
+            <EnabledView>HORIZONTAL</EnabledView>
+            <EnabledView>VERTICAL</EnabledView>
+            <Layout type="GROUP" wId="FG11_G1">
+                <Layout type="INLINE" wId="FG11_G1_I1">
+                    <Layout fixGrid="false" grid="10" type="INLINE_GROUP" wId="FG11_G1_I1_IG1">
+                        <Field id="0BXXXXC010A" label="kapcsolt_váll_megnev16_2" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="kapcsolt_váll_megnev16_2" webLength="10" wId="FG11_G1_I1_IG1_F1" calculated="false" default="false" irids="8" maxLength="150" metaType="1"/>
+                    </Layout>
+                    <Layout fixGrid="false" grid="2" type="INLINE_GROUP" wId="FG11_G1_I1_IG2">
+                        <Field id="0BXXXXC011A" label="kapcsolt_váll_adószáma16_2" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="kapcsolt_váll_adószáma16_2" webLength="2" wId="FG11_G1_I1_IG2_F1" calculated="false" default="false" irids="3" mask="########-#-##" maxLength="13" metaType="1"/>
+                    </Layout>
+                    <Layout fixGrid="false" grid="8" type="INLINE_GROUP" wId="FG11_G1_I1_IG3">
+                        <Field id="0BXXXXC012A" label="kapcsolat_jellege16_2" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="COMBOBOX" vid="kapcsolat_jellege16_2" webLength="8" wId="FG11_G1_I1_IG3_F1" calculated="false" default="false" dynList="false" irids="8" maxLength="120" metaType="1" validation="true" valuesListIndex="3"/>
+                    </Layout>
+                    <Layout fixGrid="false" grid="2" type="INLINE_GROUP" wId="FG11_G1_I1_IG4">
+                        <Field id="0BXXXXC013A" label="kapcsolat_mértéke16_2" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="kapcsolat_mértéke16_2" webLength="2" wId="FG11_G1_I1_IG4_F1" calculated="false" default="false" irids="8" maxLength="60" metaType="1"/>
+                    </Layout>
+                </Layout>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup chainId="120045" chainView="HORIZONTAL" clientSdgId="120042" defaultGroup="false" index="-1" maxCount="1" nextId="120019" sdgId="120042" sdgRole="DETAIL" toggleSwitch="true" type="DYNAMIC" fgroupType="NORMAL" id="120048" name="Kapcsolt jogviszony 3." wId="FG12">
+            <FGFunction btnLabel="Új kapcsolt jogviszony" name="fgNew"/>
+            <FGFunction btnLabel="Kapcsolt jogviszony törlése" name="fgDelete"/>
+            <Fid>0BXXXXC014A</Fid>
+            <Fid>0BXXXXC015A</Fid>
+            <Fid>0BXXXXC016A</Fid>
+            <Fid>0BXXXXC017A</Fid>
+            <EnabledView>HORIZONTAL</EnabledView>
+            <EnabledView>VERTICAL</EnabledView>
+            <Layout grid="10" longLabel="false" type="VERTICAL" wId="FG12_V1">
+                <Field id="0BXXXXC014A" label="kapcsolt_váll_megnev16_3" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="kapcsolt_váll_megnev16_3" webLength="10" wId="FG12_V1_F1" calculated="false" default="false" irids="8" maxLength="150" metaType="1"/>
+            </Layout>
+            <Layout grid="2" longLabel="false" type="VERTICAL" wId="FG12_V2">
+                <Field id="0BXXXXC015A" label="kapcsolt_váll_adószáma16_3" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="kapcsolt_váll_adószáma16_3" webLength="2" wId="FG12_V2_F1" calculated="false" default="false" irids="3" mask="########-#-##" maxLength="13" metaType="1"/>
+            </Layout>
+            <Layout grid="8" longLabel="false" type="VERTICAL" wId="FG12_V3">
+                <Field id="0BXXXXC016A" label="kapcsolat_jellege16_3" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="COMBOBOX" vid="kapcsolat_jellege16_3" webLength="8" wId="FG12_V3_F1" calculated="false" default="false" dynList="false" irids="8" maxLength="120" metaType="1" validation="true" valuesListIndex="3"/>
+            </Layout>
+            <Layout grid="2" longLabel="false" type="VERTICAL" wId="FG12_V4">
+                <Field id="0BXXXXC017A" label="kapcsolat_mértéke16_3" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="kapcsolat_mértéke16_3" webLength="2" wId="FG12_V4_F1" calculated="false" default="false" irids="8" maxLength="60" metaType="1"/>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup chainId="120057" chainView="HORIZONTAL" clientSdgId="120054" defaultGroup="false" index="-1" maxCount="9999" nextId="120059" sdgId="120054" sdgRole="HEADER" toggleSwitch="true" type="DYNAMIC" webHelp="G_120059.html" fgroupType="NORMAL" id="120059" name="Kívül maradó csoporttag adatai" wId="FG13">
+            <Fid>0CXXXXC007A</Fid>
+            <Fid>0CXXXXC008A</Fid>
+            <EnabledView>HORIZONTAL</EnabledView>
+            <EnabledView>VERTICAL</EnabledView>
+            <Layout label="Kívül maradó adóalany adatai" type="SUBTITLE" wId="FG13_ST1">
+                <Layout type="GROUP" wId="FG13_ST1_G1">
+                    <Layout type="INLINE" wId="FG13_ST1_G1_I1">
+                        <Layout fixGrid="false" grid="8" type="INLINE_GROUP" wId="FG13_ST1_G1_I1_IG1">
+                            <Field id="0CXXXXC007A" label="Teljes neve (elnevezése)" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="kívülmaradó_neve" webLength="8" wId="FG13_ST1_G1_I1_IG1_F1" calculated="false" default="false" irids="8" maxLength="150" metaType="1"/>
+                        </Layout>
+                        <Layout fixGrid="false" grid="2" type="INLINE_GROUP" wId="FG13_ST1_G1_I1_IG2">
+                            <Field id="0CXXXXC008A" label="Adószáma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="kívülmaradó_adószáma" webLength="2" wId="FG13_ST1_G1_I1_IG2_F1" calculated="false" default="false" irids="3" mask="########-#-##" maxLength="13" metaType="1"/>
+                        </Layout>
+                    </Layout>
+                </Layout>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup chainId="120057" chainView="HORIZONTAL" clientSdgId="120054" defaultGroup="false" index="0" maxCount="9999" nextId="120058" position="BOTTOM" sdgId="120054" sdgRole="HEADER" toggleSwitch="true" type="DYNAMIC" fgroupType="EGYEDI_LANC_ELEM" id="120060" name="A kívül maradó tag nyilatkozatai" parentId="120059" wId="FG14">
+            <Fid>120067</Fid>
+            <Fid>0CXXXXC021A</Fid>
+            <Fid>0CXXXXC022A</Fid>
+            <Fid>0CXXXXC023A</Fid>
+            <Fid>0CXXXXC024A</Fid>
+            <EnabledView>HORIZONTAL</EnabledView>
+            <EnabledView>VERTICAL</EnabledView>
+            <Layout type="GROUP" wId="FG14_G1">
+                <Layout type="INLINE" wId="FG14_G1_I1">
+                    <Layout fixGrid="false" grid="12" type="INLINE_GROUP" wId="FG14_G1_I1_IG1">
+                        <Field id="120067" label="A kívül maradó tag nyilatkozatai" mandatory="false" readonly="false" searcher="false" style="text--size-16 text--bold text--align-left" type="LABEL" webLength="12" wId="FG14_G1_I1_IG1_F1" calculated="false" default="false" irids="0" metaType="0"/>
+                    </Layout>
+                    <Layout fixGrid="false" grid="12" type="INLINE_GROUP_HORIZONTAL" wId="FG14_G1_I1_IGH2">
+                        <Field id="0CXXXXC021A" label="A csoportos áfaalanyiság létrehozásához, a csoportazonosító szám megállapításához hozzájárulok" labelGrid="11" labelPosition="RIGHT" mandatory="false" readonly="false" searcher="false" type="CHECKBOX" vid="csoportazonosítóhoz_hozzájárul" webLength="1" wId="FG14_G1_I1_IGH2_F1" calculated="false" default="false" irids="9" metaType="4"/>
+                    </Layout>
+                    <Layout fixGrid="false" grid="6" type="INLINE_GROUP_HORIZONTAL" wId="FG14_G1_I1_IGH3">
+                        <Field id="0CXXXXC022A" label="Hozzájárulok a fennmaradó áfacsoport fenntartásához" labelGrid="5" labelPosition="RIGHT" mandatory="false" readonly="false" searcher="false" type="CHECKBOX" vid="hozzájár_áfacsop_fenntart17" webLength="1" wId="FG14_G1_I1_IGH3_F1" calculated="false" default="false" irids="9" metaType="4"/>
+                    </Layout>
+                    <Layout fixGrid="false" grid="3" type="INLINE_GROUP" wId="FG14_G1_I1_IG4">
+                        <Field id="0CXXXXC023A" label="A fennmaradó áfacsoport csoportazonosító száma" labelGrid="3" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="fennmaradó_áfacsop_csopazon17" webLength="3" wId="FG14_G1_I1_IG4_F1" calculated="false" default="false" irids="3" mask="########-#-##" maxLength="13" metaType="1"/>
+                    </Layout>
+                    <Layout fixGrid="false" grid="12" type="INLINE_GROUP_HORIZONTAL" wId="FG14_G1_I1_IGH5">
+                        <Field id="0CXXXXC024A" label="Kötelezettséget vállalok az Áfa tv. 8.§ (7) bekezdésében  meghatározott kötelezettségek teljesítésére" labelGrid="11" labelPosition="RIGHT" mandatory="false" readonly="false" searcher="false" type="CHECKBOX" vid="Köt_váll_nyil_Pótlap17" webLength="1" wId="FG14_G1_I1_IGH5_F1" calculated="false" default="false" irids="9" metaType="4"/>
+                    </Layout>
+                </Layout>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup chainId="120057" chainView="HORIZONTAL" clientSdgId="120054" defaultGroup="false" index="0" maxCount="9999" nextId="120059" position="TOP" sdgId="120054" sdgRole="HEADER" toggleSwitch="true" type="DYNAMIC" fgroupType="EGYEDI_LANC_ELEM" id="120058" name="Működő csoporthoz kívül maradó új adóalanyként kapcsolódom" parentId="120059" wId="FG15">
+            <FGFunction btnLabel="Új kívül maradó" name="fgNew"/>
+            <FGFunction btnLabel="Kívül maradó törlése" name="fgDelete"/>
+            <Fid>0CXXXXC001A</Fid>
+            <Fid>0CXXXXC002A</Fid>
+            <Fid>0CXXXXC003A</Fid>
+            <Fid>0CXXXXC004A</Fid>
+            <Fid>0CXXXXC005A</Fid>
+            <Fid>0CXXXXC006A</Fid>
+            <EnabledView>HORIZONTAL</EnabledView>
+            <EnabledView>VERTICAL</EnabledView>
+            <Layout type="GROUP" wId="FG15_G1">
+                <Layout type="INLINE" wId="FG15_G1_I1">
+                    <Layout fixGrid="false" grid="6" type="INLINE_GROUP_HORIZONTAL" wId="FG15_G1_I1_IGH1">
+                        <Field id="0CXXXXC001A" label="Működő csoporthoz kívül maradó adóalanyként kapcsolódom" labelGrid="5" labelPosition="RIGHT" mandatory="false" readonly="false" searcher="false" type="CHECKBOX" vid="kívülmarad" webLength="1" wId="FG15_G1_I1_IGH1_F1" calculated="false" default="false" irids="9" metaType="4"/>
+                    </Layout>
+                    <Layout fixGrid="false" grid="3" type="INLINE_GROUP" wId="FG15_G1_I1_IG2">
+                        <Field id="0CXXXXC002A" label="Csoportazonosító szám" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="kívülmarad_csopazon" webLength="3" wId="FG15_G1_I1_IG2_F1" calculated="false" default="false" irids="3" mask="########-#-##" maxLength="13" metaType="1"/>
+                    </Layout>
+                    <Layout fixGrid="false" grid="3" type="INLINE_GROUP" wId="FG15_G1_I1_IG3">
+                        <Field id="0CXXXXC003A" label="A csoporthoz történő csatlakozás időpontja" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="DATE" vid="csoporthoz_csatlakozás_ideje17" webLength="3" wId="FG15_G1_I1_IG3_F1" calculated="false" default="false" irids="3" mask="####.##.##" maxLength="8" metaType="2"/>
+                    </Layout>
+                </Layout>
+            </Layout>
+            <Layout type="HORIZONTAL" wId="FG15_H2">
+                <Field id="0CXXXXC004A" label="Kérem a megadott csoportazonosító számú csoportból való kiválás engedélyezését" labelGrid="8" labelPosition="RIGHT" mandatory="false" readonly="false" searcher="false" type="CHECKBOX" vid="kívülmaradási_engedélyt_kér" webLength="1" wId="FG15_H2_F1" calculated="false" default="false" irids="9" metaType="4"/>
+            </Layout>
+            <Layout grid="3" longLabel="false" type="VERTICAL" wId="FG15_V3">
+                <Field id="0CXXXXC005A" label="A csoportból való kiválás időpontja" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="DATE" vid="csoportból_kiválás_ideje" webLength="3" wId="FG15_V3_F1" calculated="false" default="false" irids="3" mask="####.##.##" maxLength="8" metaType="2"/>
+            </Layout>
+            <Layout type="HORIZONTAL" wId="FG15_H4">
+                <Field id="0CXXXXC006A" label="Kérem a megadott csoportazonosító számú csoportban kívül maradó adóalanykénti nyilvántartásom törlését" labelGrid="11" labelPosition="RIGHT" mandatory="false" readonly="false" searcher="false" type="CHECKBOX" vid="törlést_kér" webLength="1" wId="FG15_H4_F1" calculated="false" default="false" irids="9" metaType="4"/>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup chainId="120061" chainView="HORIZONTAL" clientSdgId="120054" defaultGroup="true" index="-1" maxCount="1" nextId="120065" sdgId="120054" sdgRole="DETAIL" toggleSwitch="true" type="DYNAMIC" fgroupType="NORMAL" id="120063" name="Kapcsolt jogviszony" wId="FG16">
+            <FGFunction btnLabel="Új kapcsolt jogviszony" name="fgNew"/>
+            <FGFunction btnLabel="Kapcsolt jogviszony törlése" name="fgDelete"/>
+            <Fid>0CXXXXC009A</Fid>
+            <Fid>0CXXXXC010A</Fid>
+            <Fid>0CXXXXC011A</Fid>
+            <Fid>0CXXXXC012A</Fid>
+            <EnabledView>HORIZONTAL</EnabledView>
+            <EnabledView>VERTICAL</EnabledView>
+            <Layout type="GROUP" wId="FG16_G1">
+                <Layout type="INLINE" wId="FG16_G1_I1">
+                    <Layout fixGrid="false" grid="10" type="INLINE_GROUP" wId="FG16_G1_I1_IG1">
+                        <Field id="0CXXXXC009A" label="Kapcsolt vállalkozás megnevezése" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="kapcsolt_váll_megnev17_1" webLength="10" wId="FG16_G1_I1_IG1_F1" calculated="false" default="false" irids="8" maxLength="150" metaType="1"/>
+                    </Layout>
+                    <Layout fixGrid="false" grid="2" type="INLINE_GROUP" wId="FG16_G1_I1_IG2">
+                        <Field id="0CXXXXC010A" label="Adószáma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="kapcsolt_váll_adószáma17_1" webLength="2" wId="FG16_G1_I1_IG2_F1" calculated="false" default="false" irids="3" mask="########-#-##" maxLength="13" metaType="1"/>
+                    </Layout>
+                    <Layout fixGrid="false" grid="8" type="INLINE_GROUP" wId="FG16_G1_I1_IG3">
+                        <Field id="0CXXXXC011A" label="Kapcsolat jellege" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="COMBOBOX" vid="kapcsolat_jellege17_1" webLength="8" wId="FG16_G1_I1_IG3_F1" calculated="false" default="false" dynList="false" irids="8" maxLength="120" metaType="1" validation="true" valuesListIndex="3"/>
+                    </Layout>
+                    <Layout fixGrid="false" grid="2" type="INLINE_GROUP" wId="FG16_G1_I1_IG4">
+                        <Field id="0CXXXXC012A" label="Kapcsolat mértéke" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="kapcsolat_mértéke17_1" webLength="2" wId="FG16_G1_I1_IG4_F1" calculated="false" default="false" irids="8" maxLength="60" metaType="1"/>
+                    </Layout>
+                </Layout>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup chainId="120061" chainView="HORIZONTAL" clientSdgId="120054" defaultGroup="false" index="-1" maxCount="1" nextId="120066" sdgId="120054" sdgRole="DETAIL" toggleSwitch="true" type="DYNAMIC" fgroupType="NORMAL" id="120065" name="Kapcsolt jogviszony 2." wId="FG17">
+            <FGFunction btnLabel="Új kapcsolt jogviszony" name="fgNew"/>
+            <FGFunction btnLabel="Kapcsolt jogviszony törlése" name="fgDelete"/>
+            <Fid>0CXXXXC013A</Fid>
+            <Fid>0CXXXXC014A</Fid>
+            <Fid>0CXXXXC015A</Fid>
+            <Fid>0CXXXXC016A</Fid>
+            <EnabledView>HORIZONTAL</EnabledView>
+            <EnabledView>VERTICAL</EnabledView>
+            <Layout type="GROUP" wId="FG17_G1">
+                <Layout type="INLINE" wId="FG17_G1_I1">
+                    <Layout fixGrid="false" grid="10" type="INLINE_GROUP" wId="FG17_G1_I1_IG1">
+                        <Field id="0CXXXXC013A" label="Kapcsolt vállalkozás megnevezése" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="kapcsolt_váll_megnev17_2" webLength="10" wId="FG17_G1_I1_IG1_F1" calculated="false" default="false" irids="8" maxLength="150" metaType="1"/>
+                    </Layout>
+                    <Layout fixGrid="false" grid="2" type="INLINE_GROUP" wId="FG17_G1_I1_IG2">
+                        <Field id="0CXXXXC014A" label="Adószáma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="kapcsolt_váll_adószáma17_2" webLength="2" wId="FG17_G1_I1_IG2_F1" calculated="false" default="false" irids="3" mask="########-#-##" maxLength="13" metaType="1"/>
+                    </Layout>
+                    <Layout fixGrid="false" grid="8" type="INLINE_GROUP" wId="FG17_G1_I1_IG3">
+                        <Field id="0CXXXXC015A" label="Kapcsolat jellege" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="COMBOBOX" vid="kapcsolat_jellege17_2" webLength="8" wId="FG17_G1_I1_IG3_F1" calculated="false" default="false" dynList="false" irids="8" maxLength="120" metaType="1" validation="true" valuesListIndex="3"/>
+                    </Layout>
+                    <Layout fixGrid="false" grid="2" type="INLINE_GROUP" wId="FG17_G1_I1_IG4">
+                        <Field id="0CXXXXC016A" label="Kapcsolat mértéke" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="kapcsolat_mértéke17_2" webLength="2" wId="FG17_G1_I1_IG4_F1" calculated="false" default="false" irids="8" maxLength="60" metaType="1"/>
+                    </Layout>
+                </Layout>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup chainId="120061" chainView="HORIZONTAL" clientSdgId="120054" defaultGroup="false" index="-1" maxCount="1" nextId="120063" sdgId="120054" sdgRole="DETAIL" toggleSwitch="true" type="DYNAMIC" fgroupType="NORMAL" id="120066" name="Kapcsolt jogviszony 3." wId="FG18">
+            <FGFunction btnLabel="Új kapcsolt jogviszony" name="fgNew"/>
+            <FGFunction btnLabel="Kapcsolt jogviszony törlése" name="fgDelete"/>
+            <Fid>0CXXXXC017A</Fid>
+            <Fid>0CXXXXC018A</Fid>
+            <Fid>0CXXXXC019A</Fid>
+            <Fid>0CXXXXC020A</Fid>
+            <EnabledView>HORIZONTAL</EnabledView>
+            <EnabledView>VERTICAL</EnabledView>
+            <Layout type="GROUP" wId="FG18_G1">
+                <Layout type="INLINE" wId="FG18_G1_I1">
+                    <Layout fixGrid="false" grid="10" type="INLINE_GROUP" wId="FG18_G1_I1_IG1">
+                        <Field id="0CXXXXC017A" label="Kapcsolt vállalkozás megnevezése" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="kapcsolt_váll_megnev17_3" webLength="10" wId="FG18_G1_I1_IG1_F1" calculated="false" default="false" irids="8" maxLength="150" metaType="1"/>
+                    </Layout>
+                    <Layout fixGrid="false" grid="2" type="INLINE_GROUP" wId="FG18_G1_I1_IG2">
+                        <Field id="0CXXXXC018A" label="Adószáma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="kapcsolt_váll_adószáma17_3" webLength="2" wId="FG18_G1_I1_IG2_F1" calculated="false" default="false" irids="3" mask="########-#-##" maxLength="13" metaType="1"/>
+                    </Layout>
+                    <Layout fixGrid="false" grid="8" type="INLINE_GROUP" wId="FG18_G1_I1_IG3">
+                        <Field id="0CXXXXC019A" label="Kapcsolat jellege" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="COMBOBOX" vid="kapcsolat_jellege17_3" webLength="8" wId="FG18_G1_I1_IG3_F1" calculated="false" default="false" dynList="false" irids="8" maxLength="120" metaType="1" validation="true" valuesListIndex="3"/>
+                    </Layout>
+                    <Layout fixGrid="false" grid="2" type="INLINE_GROUP" wId="FG18_G1_I1_IG4">
+                        <Field id="0CXXXXC020A" label="Kapcsolat mértéke" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="kapcsolat_mértéke17_3" webLength="2" wId="FG18_G1_I1_IG4_F1" calculated="false" default="false" irids="8" maxLength="60" metaType="1"/>
+                    </Layout>
+                </Layout>
+            </Layout>
+        </FieldGroup>
+        <GuiLabel grid="12" id="120049" style="text--size-16 text--bold text--align-left" label="Csoportos áfaalanyisághoz kapcsolódó nyilatkozatok"/>
+        <GuiLabel grid="12" id="120067" style="text--size-16 text--bold text--align-left" label="A kívül maradó tag nyilatkozatai"/>
+        <InputRule irid="1" irule="[A-Z]"/>
+        <InputRule irid="2" irule="[0-9,.]"/>
+        <InputRule irid="3" irule="[0-9]"/>
+        <InputRule irid="4" irule="[0-9+\-,.]"/>
+        <InputRule irid="5" irule="[A-Z0-9]"/>
+        <InputRule irid="6" irule="[A-ZÁÉÍÓÖŐÚÜŰ]"/>
+        <InputRule irid="7" irule="[^0-9]"/>
+        <InputRule irid="8" irule="[\x20-\uFFFF]"/>
+        <InputRule irid="9" irule="[ X]"/>
+        <InputRule irid="10" irule="[0-9+-]"/>
+        <Languages>
+            <LanguageCode>HU</LanguageCode>
+            <Language default="true" value="HU">
+                <Text id="900000" value="Új kapcsolt jogviszony hozzáadása"/>
+                <Text id="900001" value="Kapcsolt jogviszony törlése"/>
+                <Text id="900002" value="Új kapcsolt jogviszony hozzáadása"/>
+                <Text id="900003" value="Kapcsolt jogviszony törlése"/>
+            </Language>
+        </Languages>
+        <Menu>
+            <MenuItem id="ROOT_MENUITEM" leaf="false" name="Mezők hozzáadása" pos="0" wizard="false">
+                <MenuItem id="120001" leaf="true" name="Azonosító adatok" parentId="ROOT_MENUITEM" pos="1" type="CSEMPE" wizard="false">
+                    <FieldGroupId>120010</FieldGroupId>
+                    <FieldGroupId>120012</FieldGroupId>
+                    <FieldGroupId>120013</FieldGroupId>
+                    <FieldGroupId>120014</FieldGroupId>
+                    <FieldGroupId>120015</FieldGroupId>
+                    <FieldGroupId>120016</FieldGroupId>
+                </MenuItem>
+                <MenuItem id="120006" leaf="true" name="A csoportos áfaalanyiság tagjainak adataihoz, nyilatkozataihoz, a csoporthoz való csatlakozáshoz, a csoportos adóalanyisághoz adott engedély visszavonásához" parentId="ROOT_MENUITEM" pos="2" type="CSEMPE" wizard="false">
+                    <FieldGroupId>120042</FieldGroupId>
+                </MenuItem>
+                <MenuItem id="120009" leaf="true" name="A csoportos áfaalanyiságon kívül maradó  adóalany adataihoz, nyilatkozataihoz, a csoportból való kiváláshoz" parentId="ROOT_MENUITEM" pos="3" type="CSEMPE" wizard="false">
+                    <FieldGroupId>120054</FieldGroupId>
+                </MenuItem>
+            </MenuItem>
+            <TileMenus>
+                <TileMenuItem id="120001"/>
+                <TileMenuItem id="120006"/>
+                <TileMenuItem id="120009"/>
+            </TileMenus>
+        </Menu>
+        <Message id="1" msgLevel="warning">
+            <CalcId>370</CalcId>
+            <CalcId>344</CalcId>
+            <Msg>Tájékoztatjuk, hogy "A csoportos áfaalanyiság tagjainak adataihoz, nyilatkozataihoz, a csoporthoz való csatlakozáshoz, a csoportos adóalanyisághoz adott engedély visszavonásához menücsoport" abban az esetben tölthető ki, ha ezen adatok kitöltését a "Benyújtás indoka" menüben kiválasztotta. (Hibakód=&lt;C006&gt;)</Msg>
+        </Message>
+        <Message id="2" msgLevel="warning">
+            <CalcId>345</CalcId>
+            <CalcId>323</CalcId>
+            <Msg>Tájékoztatjuk, hogy "A csoportos áfaalanyiságon kívül maradó  adóalany adataihoz, nyilatkozataihoz, a csoportból való kiváláshoz" menücsoportot abban az esetben töltheti ki, ha ezen adatok kitöltését a "Benyújtás indoka" menüben kiválasztotta. (Hibakód=&lt;C007&gt;)</Msg>
+        </Message>
+        <Message id="3" msgLevel="warning">
+            <CalcId>361</CalcId>
+            <CalcId>360</CalcId>
+            <Msg>Tájékoztatjuk, hogy a menüt csak akkor töltheti ki, ha jelölte a "Képviselő személyében bekövetkezett változást". (Hibakód=&lt;C046&gt;)</Msg>
+        </Message>
+        <Message id="4" msgLevel="error">
+            <CalcId>427</CalcId>
+            <Msg>"Új kérelem" jelölése esetén legalább két csoporttagot (1 csoportképviselőt és 1 tagot) jelölni szükséges. (Hibakód=&lt;C167&gt;)</Msg>
+        </Message>
+        <Message id="5" msgLevel="error">
+            <CalcId>100001</CalcId>
+            <CalcId>100002</CalcId>
+            <CalcId>100003</CalcId>
+            <Msg>[Nyomtatvány] Verziokontroll=1</Msg>
+        </Message>
+        <Message id="6" msgLevel="warning">
+            <CalcId>322</CalcId>
+            <Msg>Csak akkor töltheti ki, ha a főlapon jelölte a 16 pótlap beadását (Hibakód=&lt;322/(Hibakód=&lt;m006&gt;)</Msg>
+        </Message>
+        <Message id="7" msgLevel="error">
+            <CalcId>304</CalcId>
+            <CalcId>371</CalcId>
+            <CalcId>416</CalcId>
+            <Msg>Tájékoztatjuk, hogy a megadott adószám hibás. Kérjük vizsgálja felül a kitöltést. (Hibakód=&lt;C036&gt;)</Msg>
+        </Message>
+        <Message id="8" msgLevel="error">
+            <CalcId>221</CalcId>
+            <Msg>Új kérelemnél nem adhat meg csoportazonosító számot, ez generálásra kerül. (Hibakód=&lt;C101&gt;)</Msg>
+        </Message>
+        <Message id="9" msgLevel="error">
+            <CalcId>382</CalcId>
+            <Msg>Kérjük adja meg a csoportazonosító számot. (Hibakód=&lt;C119&gt;)</Msg>
+        </Message>
+        <Message id="10" msgLevel="error">
+            <CalcId>418</CalcId>
+            <Msg>Tájékoztatjuk, hogy a "A csoportos áfaalanyiság tagjainak adataihoz, nyilatkozataihoz, a csoporthoz való csatlakozáshoz, a csoportos adóalanyisághoz adott engedély visszavonásához" menü jelölése esetén kötelező kitölteni a "Csoportazonosító szám" menüt. (Hibakód=&lt;C147&gt;)</Msg>
+        </Message>
+        <Message id="11" msgLevel="error">
+            <CalcId>331</CalcId>
+            <Msg>Tájékoztatjuk, hogy a "A csoportos  áfaalanyiságon kívül maradó  adóalany adataihoz, nyilatkozataihoz, a csoportból való kiváláshoz" menü kitöltése esetén a "A csoportos  áfaalanyiság tagjainak adataihoz, nyilatkozataihoz, a csoporthoz való csatlakozáshoz, a csoportos adóalanyisághoz adott engedély visszavonásához" menü nem tölthető ki. (Hibakód=&lt;C117&gt;)</Msg>
+        </Message>
+        <Message id="12" msgLevel="error">
+            <CalcId>414</CalcId>
+            <Msg>Tájékoztatjuk, hogy a "A csoportos  áfaalanyiság tagjainak adataihoz, nyilatkozataihoz, a csoporthoz való csatlakozáshoz, a csoportos adóalanyisághoz adott engedély visszavonásához" menü kitöltése esetén a "A csoportos  áfaalanyiságon kívül maradó  adóalany adataihoz, nyilatkozataihoz, a csoportból való kiváláshoz" menü nem tölthető ki. (Hibakód=&lt;C118&gt;)</Msg>
+        </Message>
+        <Message id="13" msgLevel="error">
+            <CalcId>383</CalcId>
+            <Msg>A csoportazonosító szám kitöltése kötelező a kiválás jelölése esetén. (Hibakód=&lt;C120&gt;)</Msg>
+        </Message>
+        <Message id="14" msgLevel="error">
+            <CalcId>373</CalcId>
+            <Msg>Tájékoztatjuk, hogy nem új csoport engedélyezését kéri, ezért nem rögzíthet be egy űrlapon 16-os és 17-es pótlapot is. (Hibakód=&lt;C044&gt;)</Msg>
+        </Message>
+        <Message id="15" msgLevel="error">
+            <CalcId>419</CalcId>
+            <Msg>Tájékoztatjuk, hogy a "A csoportos áfaalanyiságon kívül maradó  adóalany adataihoz, nyilatkozataihoz, a csoportból való kiváláshoz menü jelölése esetén kötelező kitölteni a "Csoportazonosító szám" menüt. (Hibakód=&lt;C148&gt;)</Msg>
+        </Message>
+        <Message id="16" msgLevel="error">
+            <CalcId>222</CalcId>
+            <Msg>Képviselő változás kérelme mellett a csoportazonosító számnak kitöltöttnek kell lennie! (Hibakód=&lt;C116&gt;)</Msg>
+        </Message>
+        <Message id="17" msgLevel="error">
+            <CalcId>342</CalcId>
+            <Msg>Kérjük, hogy a "Benyújtás indoka" menücsoport esetén legalább egy mezőt jelölni szíveskedjen. (Hibakód=&lt;C002&gt;)</Msg>
+        </Message>
+        <Message id="18" msgLevel="error">
+            <CalcId>369</CalcId>
+            <Msg>Kérjük, hogy a csoportazonosító számot működő áfa csoport esetén szíveskedjen kitölteni. Ha új kérelem benyújtását jelölte, abban az esetben a nem szükséges kitölteni a mezőt, a hivatal generál csoportazonosító számot.  (Hibakód=&lt;C001&gt;)</Msg>
+        </Message>
+        <Message id="19" msgLevel="error">
+            <CalcId>375</CalcId>
+            <Msg>Képviselőre vonatkozó jelölés, csak "U", "T", vagy üres lehet. (Hibakód=&lt;C104&gt;)</Msg>
+        </Message>
+        <Message id="20" msgLevel="error">
+            <CalcId>376</CalcId>
+            <Msg>"Új kérelem" esetén csak  U lehet a mező tartalma. (Hibakód=&lt;C105&gt;)</Msg>
+        </Message>
+        <Message id="21" msgLevel="error">
+            <CalcId>377</CalcId>
+            <Msg>"Képviselő személyében bekövetkezett változás" esetén csak "T" lehet a mező tartalma. (Hibakód=&lt;C106&gt;)</Msg>
+        </Message>
+        <Message id="22" msgLevel="error">
+            <CalcId>333</CalcId>
+            <Msg>Tájékoztatjuk, hogy a csoportképviselő neve és adószáma minden esetben kitöltendő. (Hibakód=&lt;C151&gt;)</Msg>
+        </Message>
+        <Message id="23" msgLevel="error">
+            <CalcId>307</CalcId>
+            <Msg>Tájékoztatjuk, hogy a megadott adószám hibás. Kérjük vizsgálja felül a kitöltést. (Hibakód=&lt;C032&gt;)</Msg>
+        </Message>
+        <Message id="24" msgLevel="warning">
+            <CalcId>380</CalcId>
+            <CalcId>225</CalcId>
+            <Msg>Csak akkor rögzítsen adószámot, ha képviselő változás történik (Figyelmeztetés) (Hibakód=&lt;C111&gt;)</Msg>
+        </Message>
+        <Message id="25" msgLevel="error">
+            <CalcId>308</CalcId>
+            <Msg>Hibás a kitöltött közösségi adószám! Kérjük vizsgálja felül a kitöltést. (Hibakód=&lt;C150&gt;)</Msg>
+        </Message>
+        <Message id="26" msgLevel="error">
+            <CalcId>368</CalcId>
+            <Msg>Kérjük jelölje, hogy a tagok képviseletét vállalja. (Hibakód=&lt;C047&gt;)</Msg>
+        </Message>
+        <Message id="27" msgLevel="error">
+            <CalcId>374</CalcId>
+            <Msg>Tájékoztatjuk, hogy kizárólag a korábbi képviselő törlése azaz képviselő változás esetén vállalhatja a tagok képviseletét. (Hibakód=&lt;C049&gt;)</Msg>
+        </Message>
+        <Message id="28" msgLevel="error">
+            <CalcId>378</CalcId>
+            <Msg>Csak "U" azaz új kérelem esetén vállalhatja a tagok képviseletét. (Hibakód=&lt;C109&gt;)</Msg>
+        </Message>
+        <Message id="29" msgLevel="error">
+            <CalcId>379</CalcId>
+            <Msg>Csak "T" azaz törölni kívánt képviselet esetén választhatja. (Hibakód=&lt;C110&gt;)</Msg>
+        </Message>
+        <Message id="30" msgLevel="error">
+            <CalcId>223</CalcId>
+            <Msg>Tájékoztatjuk, hogy "Új kérelem" jelölése esetén nem tölthető ki az új csoportképvselőre vonatkozó menük. (Hibakód=&lt;C146&gt;)</Msg>
+        </Message>
+        <Message id="31" msgLevel="error">
+            <CalcId>311</CalcId>
+            <Msg>Tájékoztatjuk, hogy a megadott adószám hibás. Kérjük vizsgálja felül a kitöltést. (Hibakód=&lt;C028&gt;)</Msg>
+        </Message>
+        <Message id="32" msgLevel="error">
+            <CalcId>359</CalcId>
+            <Msg>Tájékoztatjuk, hogy a képviselő változáshoz megadott régi és új adószám nem egyezhet meg. (Hibakód=&lt;C045&gt;)</Msg>
+        </Message>
+        <Message id="33" msgLevel="error">
+            <CalcId>381</CalcId>
+            <Msg>Képviselő változás esetén kötelező megadni az adószámot. (Hibakód=&lt;C112&gt;)</Msg>
+        </Message>
+        <Message id="34" msgLevel="error">
+            <CalcId>411</CalcId>
+            <Msg>Az adószám és név kitöltése kötelező új kérelem vagy képviselő változás esetén. (Hibakód=&lt;C107&gt;)</Msg>
+        </Message>
+        <Message id="35" msgLevel="error">
+            <CalcId>362</CalcId>
+            <Msg>Kérjük jelölje, hogy a tagok képviseletét vállalja. (Hibakód=&lt;C048&gt;)</Msg>
+        </Message>
+        <Message id="36" msgLevel="error">
+            <CalcId>412</CalcId>
+            <Msg>Az új képviselő adatai nem tölthetőek ki. (Hibakód=&lt;C108&gt;)</Msg>
+        </Message>
+        <Message id="37" msgLevel="error">
+            <CalcId>231</CalcId>
+            <Msg>Képviselő személyében bekövetkezett változás esetén ennek időpontját kötelező megadni. (Hibakód=&lt;C113&gt;)</Msg>
+        </Message>
+        <Message id="38" msgLevel="error">
+            <CalcId>232</CalcId>
+            <Msg>Tájékoztatjuk, hogy "Új kérelem" mező jelölése esetén nem töltheti ki a "Képviselő személyében bekövetkezett változás időpontja" menüt. (Hibakód=&lt;C149&gt;)</Msg>
+        </Message>
+        <Message id="39" msgLevel="error">
+            <CalcId>233</CalcId>
+            <Msg>Dátum beírása esetén a jódátum ( változás_dátuma ) és változás_dátuma &gt; 20071231 (Hibakód=&lt;C152&gt;)</Msg>
+        </Message>
+        <Message id="40" msgLevel="error">
+            <CalcId>343</CalcId>
+            <Msg>A képviselő személyében bekövetkezett változás jelölése esetén a "A tagok által kijelölt képviselő adatai", a "A tagok által kijelölt új képviselő adatai" és a "A képviselő személyében bekövetkezett változás időpontja" kötelezően kitöltendő menü. (Hibakód=&lt;C004&gt;)</Msg>
+        </Message>
+        <Message id="41" msgLevel="error">
+            <CalcId>237</CalcId>
+            <Msg>Tájékoztatjuk, hogy a "Képviselő személyében bekövetkezett változás" menü jelölése esetén nem tölthatő ki a a "Kérem a csoport részére a közösségi adószám megállapítását"  menü. (Hibakód=&lt;C145&gt;)</Msg>
+        </Message>
+        <Message id="42" msgLevel="warning">
+            <CalcId>236</CalcId>
+            <Msg>Tájékoztatjuk, hogy új kérelem esetén a közösségi adószám megállapítását is kérheti. (Hibakód=&lt;C052&gt;)</Msg>
+        </Message>
+        <Message id="43" msgLevel="error">
+            <CalcId>238</CalcId>
+            <Msg>Tájékoztatjuk, hogy új kérelem esetén a csoportazonosító szám megállapítását is kell kérnie. (Hibakód=&lt;C050&gt;)</Msg>
+        </Message>
+        <Message id="44" msgLevel="error">
+            <CalcId>239</CalcId>
+            <Msg>Tájékoztatjuk, hogy a "Képviselő személyében bekövetkezett változás" menü jelölése esetén nem tölthető ki a "Kérem a csoportos áfaalanyiság engedélyezését és a csoportazonosító szám megállapítását" menü. (Hibakód=&lt;C144&gt;)</Msg>
+        </Message>
+        <Message id="45" msgLevel="warning">
+            <CalcId>397</CalcId>
+            <Msg>Tájékoztatjuk, hogy amennyiben áfacsoport engedélyezését kéri, abban az esetben közösségi adószám megállapítását is kérheti. (Hibakód=&lt;C054&gt;)</Msg>
+        </Message>
+        <Message id="46" msgLevel="error">
+            <CalcId>334</CalcId>
+            <Msg>Tájékoztatjuk, hogy új kérelem jelölése esetén a "A tagok által kijelölt képviselő adatai", a "Kérem a csoportos adóalanyiság engedélyezését és a csoportazonosító szám megállapítását",  a "A csoport létrehozásának időpontja", a "Kötelezettséget vállalok az Áfa tv. 8.§ (6) bekezdésében meghatározott kötelezettségek teljesítésére", és "Nyilatkozzuk, hogy nyilvántartási rendszerünk alkalmas a belső és külső kapcsolatok egyértelmű, megbízható és maradéktalan elkülönítésére." menüket is szíveskedjen kitölteni. (Hibakód=&lt;C003&gt;)</Msg>
+        </Message>
+        <Message id="47" msgLevel="error">
+            <CalcId>395</CalcId>
+            <Msg>Új kérelem jelölése estén a kötelezettség vállalás kitöltése szükséges! (Hibakód=&lt;C114&gt;)</Msg>
+        </Message>
+        <Message id="48" msgLevel="error">
+            <CalcId>398</CalcId>
+            <Msg>Tájékoztatjuk, hogy amennyiben áfacsoport engedélyezését kéri, abban az esetben kötelezettséget is kell vállalnia az Áfa tv. 8.§ (6) bekezdésében meghatározott kötelezettségek teljesítésére. (Hibakód=&lt;C055&gt;)</Msg>
+        </Message>
+        <Message id="49" msgLevel="warning">
+            <CalcId>339</CalcId>
+            <Msg>A kapcsolatfelvétel meggyorsítása érdekében kérjük töltse ki az adatlapot benyújtó ügyintéző személy nevét és telefonszámát. (Hibakód=&lt;C005&gt;)</Msg>
+        </Message>
+        <Message id="50" msgLevel="error">
+            <CalcId>257</CalcId>
+            <Msg>Csatlakozó adóalanyként kötelező kitölteni a csoportazonosító számot! (Hibakód=&lt;C121&gt;)</Msg>
+        </Message>
+        <Message id="51" msgLevel="error">
+            <CalcId>417</CalcId>
+            <Msg>Tájékoztatjuk, hogy az adatlapon feltüntett csoportazonosító számok eltérnek egymástól. Kérjük szíveskedjen felülvizsgálni a kitöltést. (Hibakód=&lt;C083&gt;)</Msg>
+        </Message>
+        <Message id="52" msgLevel="error">
+            <CalcId>390</CalcId>
+            <Msg>Pótlap16. 2. rovat "név" mező kitöltése kötelező, ha a Főlapon a 2. rovatban a "16. pótlap benyújtása" mező kitöltött. (Hibakód=&lt;1077647/C133&gt;)</Msg>
+        </Message>
+        <Message id="53" msgLevel="warning">
+            <CalcId>358</CalcId>
+            <CalcId>357</CalcId>
+            <Msg>Felhívjuk szíves figyelmét, hogy a csoportképviselő adatait kizárólag az adatlap "A tagok által kijelölt képviselő adatai" menüjében elegendő megadni, a csoporttagok között nem szükséges ismételten feltüntetni. (Hibakód=&lt;C020&gt;)</Msg>
+        </Message>
+        <Message id="54" msgLevel="error">
+            <CalcId>365</CalcId>
+            <Msg>Kérjük a csoporttag valamennyi adatát (név és adószám) kitölteni szíveskedjen. (Hibakód=&lt;C009&gt;)</Msg>
+        </Message>
+        <Message id="55" msgLevel="error">
+            <CalcId>400</CalcId>
+            <Msg>Tájékoztatjuk, hogy a csoportképviselőt nem kell felvennie jelölnie csoporttagnak. (Hibakód=&lt;C059&gt;)</Msg>
+        </Message>
+        <Message id="56" msgLevel="error">
+            <CalcId>402</CalcId>
+            <CalcId>401</CalcId>
+            <CalcId>403</CalcId>
+            <Msg>Kérjük vizsgálja felül a kitöltést, mivel a megadott adószámok megegyezőek. (Hibakód=&lt;C060&gt;)</Msg>
+        </Message>
+        <Message id="57" msgLevel="error">
+            <CalcId>346</CalcId>
+            <CalcId>347</CalcId>
+            <CalcId>348</CalcId>
+            <Msg>Kapcsolt jogviszony megadása esetén, kérjük valamennyi mezőt töltse ki. (Hibakód=&lt;C010&gt;)</Msg>
+        </Message>
+        <Message id="58" msgLevel="error">
+            <CalcId>423</CalcId>
+            <Msg>Tájékoztatjuk, hogy "Új kérelem" vagy "Működő csoporthoz  új adóalanyként kapcsolódom" mezők kitöltése esetén  legalább egy kapcsolt jogviszony kitöltése kötelező. (Hibakód=&lt;C157&gt;)</Msg>
+        </Message>
+        <Message id="59" msgLevel="warning">
+            <CalcId>366</CalcId>
+            <CalcId>367</CalcId>
+            <Msg>Tájékoztatjuk, hogy a kapcsolt jogviszony jelölése nem azonos a csoporttagok bejelentésével, minden csoporttagot a megfelelő menüben külön-külön szükséges feltüntetni.  A kapcsolt jogviszony adatok kitöltése az elbírálás feltételeinek ellenőrzésében segíti az adóhatóságot. (Hibakód=&lt;C019&gt;)</Msg>
+        </Message>
+        <Message id="60" msgLevel="error">
+            <CalcId>268</CalcId>
+            <Msg>Tájékoztatjuk, hogy amennyiben a csoportazonosító számot kitöltötte, nem kérheti a csoportos áfalanyiság engedélyezését és a csoportazonosító szám megállapítását. (Hibakód=&lt;C127&gt;)</Msg>
+        </Message>
+        <Message id="61" msgLevel="error">
+            <CalcId>269</CalcId>
+            <Msg>Tájékoztatjuk, hogy a  "Kérem a csoportos áfaalanyiság engedélyezését és a csoportazonosító szám megállapítását"  menü jelölése esetén a csoportképviselő adatait kötelező kitölteni. (Hibakód=&lt;C158&gt;)</Msg>
+        </Message>
+        <Message id="62" msgLevel="error">
+            <CalcId>424</CalcId>
+            <Msg>Tájékoztatjuk, hogy  Új kérelem jelölése esetén a  "Kérem a csoportos áfaalanyiság engedélyezését és a csoportazonosító szám megállapítását menü jelölése kitöltése kötelező. (Hibakód=&lt;C165&gt;)</Msg>
+        </Message>
+        <Message id="63" msgLevel="error">
+            <CalcId>428</CalcId>
+            <Msg>Tájékoztatjuk, hogy csatlakozás esetén nyilatkoznia szükséges a nyilvántartási rendszer alkalmasságáról is. (Hibakód=&lt;C168&gt;)</Msg>
+        </Message>
+        <Message id="64" msgLevel="error">
+            <CalcId>336</CalcId>
+            <Msg>A csoporthoz történő csatlakozás jelölése esetén kérjük szíveskedjen megadni a csatlakozás dátumát is. (Hibakód=&lt;C011&gt;)</Msg>
+        </Message>
+        <Message id="65" msgLevel="error">
+            <CalcId>279</CalcId>
+            <Msg>"Csopazonosító szám" kitöltése esetén a "Működő csoprthoz új adóalanyként csatlakozom", vagy  a "Kérem a megadott csoportazonosító számú csoporthoz való csatlakozás engedélyezését", vagy a "Kérem a csoportos áfaalanyiságra adott engedély visszavonását"  menü kitöltése kötelező. (Hibakód=&lt;C154&gt;)</Msg>
+        </Message>
+        <Message id="66" msgLevel="error">
+            <CalcId>363</CalcId>
+            <Msg>Tájékoztatjuk, hogy nem kérheti az engedély visszavonását új csoport létrehozási vagy csoporthoz csatlakozási kérelem mellett. (Hibakód=&lt;C058&gt;)</Msg>
+        </Message>
+        <Message id="67" msgLevel="error">
+            <CalcId>385</CalcId>
+            <Msg>Amennyiben csoportos engedély visszavonását kéri, kérjük töltse ki a csoportazonosító számot is. (Hibakód=&lt;C128&gt;)</Msg>
+        </Message>
+        <Message id="68" msgLevel="error">
+            <CalcId>387</CalcId>
+            <Msg>Tájékoztatjuk, hogy csatalkozó adóalanyként nem töltehetőek ki a csoportos áfalanyiság engedélyezésre, illetve az engedély visszavonására vonatkozó menük. (Hibakód=&lt;C130&gt;)</Msg>
+        </Message>
+        <Message id="69" msgLevel="error">
+            <CalcId>391</CalcId>
+            <Msg>Tájékoztatjuk, hogy az engedély visszavonására vonatkozó menü helytelen értéket tartalmaz, kérjük vizsgálja felül a kitöltést, mivel a menü értéke csak 1, 3, 4, 5, 6, 7 lehet. (Hibakód=&lt;C134&gt;)</Msg>
+        </Message>
+        <Message id="70" msgLevel="error">
+            <CalcId>399</CalcId>
+            <Msg>Tájékoztatjuk, hogy hibás okot jelölt meg meg a csoportos adóalanyiság visszavonásának. Az ok kód értéke 1 - 10 közötti lehet. (Hibakód=&lt;C056&gt;)</Msg>
+        </Message>
+        <Message id="71" msgLevel="error">
+            <CalcId>404</CalcId>
+            <Msg>Tájékoztatjuk, hogy ha a csoport engedélyének visszavonását kéri, a csoportazonosító számot is jelölnie szükséges. (Hibakód=&lt;C076&gt;)</Msg>
+        </Message>
+        <Message id="72" msgLevel="error">
+            <CalcId>255</CalcId>
+            <Msg>Tájékoztatjuk, hogy a "Kérem a csoportos áfaalanyiságra adott engedély visszavonását" menü jelölése esetén nem tölthető ki a  "Közösségi adószám" menü. (Hibakód=&lt;C153&gt;)</Msg>
+        </Message>
+        <Message id="73" msgLevel="error">
+            <CalcId>258</CalcId>
+            <Msg>Tájékoztatjuk, hogy a "Csopazonosító szám" mező kitöltése esetén a "Működő csoprthoz új adóalanyként csatlakozom" menü, vagy "Kérem az 1. pontban megadott csoportazonosító számú csoporthoz való csatlakozás engedélyezését" menü,  vagy a  "Kérem a csoportos áfaalanyiságra adott engedély visszavonását" menü  kötelezően kitöltendő!  (Hibakód=&lt;C155&gt;)</Msg>
+        </Message>
+        <Message id="74" msgLevel="error">
+            <CalcId>420</CalcId>
+            <Msg>Tájékoztatjuk, hogy amennyiben a "Működő csoprthoz új adóalanyként csatlakozom" menü, vagy a "Kérem az 1. pontban megadott csoportazonosító számú csoporthoz való csatlakozás engedélyezését" menü,  vagy a  "Kérem a csoportos áfaalanyiságra adott engedély visszavonását" mező kitöltött, akkor nem tölthető ki a "Kérem a csoportos áfaalanyiság engedélyezését és a csoportazonosító szám megállapítását"  menü. (Hibakód=&lt;C160&gt;)</Msg>
+        </Message>
+        <Message id="75" msgLevel="error">
+            <CalcId>422</CalcId>
+            <Msg>Tájékoztatjuk, hogy a  "Kérem a csoportos áfaalanyiságra adott engedély visszavonását" menü jelölése vagy a "Kérem a csoportos áfaalanyiság engedélyezését és a csoportazonosító szám megállapítását"  menü jelölése esetén nem jelölhető  a  "Kérem az 1. pontban megadott csoportazonosító számú csoporthoz való csatlakozás engedélyezését" menü. (Hibakód=&lt;C159&gt;)</Msg>
+        </Message>
+        <Message id="76" msgLevel="error">
+            <CalcId>349</CalcId>
+            <Msg>Az engedély visszavonásának jelölése esetén kérjük szíveskedjen megadni a csoportos adóalany megszűnésének időpontját is. (Hibakód=&lt;C012&gt;)</Msg>
+        </Message>
+        <Message id="77" msgLevel="error">
+            <CalcId>280</CalcId>
+            <Msg>Kérjük adja meg annak a csoportnak az csoportazonosító számát, amely esetén csoportengedély visszavonását kéri. (Hibakód=&lt;C057&gt;)</Msg>
+        </Message>
+        <Message id="78" msgLevel="error">
+            <CalcId>386</CalcId>
+            <Msg>Tájékoztatjuk, hogy a csoportazonosító számot jelölése esetén a csoporthoz történő csatlakozásra vonatkozó menüket, vagy a az engedély visszavonására vonatkozó menüket töltheti ki. (Hibakód=&lt;C129&gt;)</Msg>
+        </Message>
+        <Message id="79" msgLevel="error">
+            <CalcId>388</CalcId>
+            <Msg>Tájékoztatjuk, hogy amennyiben a csoportos áfaalanyiság engedélyezésére, vagy a működő csoporthoz történő csatlakozásra vonatkozó adatokat töltött ki, nem töltheti ki az engedély visszavonására vonatkozó menüket.  (Hibakód=&lt;C131&gt;)</Msg>
+        </Message>
+        <Message id="80" msgLevel="error">
+            <CalcId>350</CalcId>
+            <Msg>Ha hozzájárul a fennmaradó áfacsoport fenntartásához, kérjük töltse ki a fennmaradó csoport adószámát is. (Hibakód=&lt;C013&gt;)</Msg>
+        </Message>
+        <Message id="81" msgLevel="error">
+            <CalcId>364</CalcId>
+            <Msg>Amennyiben működő áfa csoporthoz csatlakozni kíván, kérjük szíveskedjen a csoportazonosító számot, a csoporttagok adatait és legalább 1 db kapcsolt jogviszonyt kitölteni szíveskedjen. Ezen túl kérjük jelölje a "Kérem a megadott csoportazonosító száma csoporthoz való csatlakozás engedélyezését" mezőt és adja meg a csoporthoz történő csatlakozás időpontját. Felhívjuk szíves figyelmét, hogy a csatlakozással nyilatkozni kell arról is hogy vállalja az Áfa tv. 8.§ (6) bekezdésében meghatározott kötelezettségek teljesítését is.  (Hibakód=&lt;C008&gt;)</Msg>
+        </Message>
+        <Message id="82" msgLevel="error">
+            <CalcId>389</CalcId>
+            <Msg>Csatlakozó adóalanyként kérjük töltse ki a csoportag adatait (teljes név és adószám), jelölje, hogy kéri a csatlakozás engedélyezését és adja meg a csatlakozás időpontját.Kérjük, jelölje, hogy kötelezettséget vállal az Áfa tv. 8.§ (6) bekezdésében meghatározott kötelezettségek teljesítésére. (Hibakód=&lt;C132&gt;)</Msg>
+        </Message>
+        <Message id="83" msgLevel="error">
+            <CalcId>415</CalcId>
+            <Msg>"Új kérelem" jelölése esetén a  "Kötelezettséget vállalok az Áfa tv. 8 § (6) bekezdésében meghatározott kötelezettségek teljesítésére" mező is kötelezően kitöltendő. (Hibakód=&lt;C122&gt;)</Msg>
+        </Message>
+        <Message id="84" msgLevel="error">
+            <CalcId>429</CalcId>
+            <Msg>Tájékoztatjuk, hogy kívül maradó adólanyként történő csatlakozás esetén nyilatkoznia szükséges a nyilvántartási rendszer alkalmasságáról is. (Hibakód=&lt;C169&gt;)</Msg>
+        </Message>
+        <Message id="85" msgLevel="error">
+            <CalcId>316</CalcId>
+            <Msg>Tájékoztatjuk, hogy az adatlapon feltüntett csoportazonosító számok eltérnek egymástól. Kérjük szíveskedjen felülvizsgálni a kitöltést. (Hibakód=&lt;C082&gt;)</Msg>
+        </Message>
+        <Message id="86" msgLevel="error">
+            <CalcId>317</CalcId>
+            <Msg>A feltüntetett csoporazonosító számok eltérnek egymástól. Kérjük vizsgálha felül a kitöltést. (Hibakód=&lt;C162&gt;)</Msg>
+        </Message>
+        <Message id="87" msgLevel="error">
+            <CalcId>372</CalcId>
+            <Msg>Tájékoztatjuk, hogy a "Csoportazonosító szám" menübe írt csoportazonosító szám hibás. Kérjük vizsgálja felül a kitöltést. (Hibakód=&lt;C137&gt;)</Msg>
+        </Message>
+        <Message id="88" msgLevel="error">
+            <CalcId>392</CalcId>
+            <Msg>Tájékoztatjuk, hogy a "Kérem a megadott csoportazonosító számú csoportból való kiválás engedélyezését" vagy a "Működő csoporthoz kívül maradó új adóalanyként kapcsolódom" jelölése esetén kötelező tölteni a "Csoportazonosító szám" menüt is. (Hibakód=&lt;C135&gt;)</Msg>
+        </Message>
+        <Message id="89" msgLevel="error">
+            <CalcId>396</CalcId>
+            <Msg>Tájékoztatjuk, hogy csoportos adóalanyiság létrehozásakor nem kérelmezhető új adóalanyként csatlakozás vagy kiválás. (Hibakód=&lt;C138&gt;)</Msg>
+        </Message>
+        <Message id="90" msgLevel="error">
+            <CalcId>287</CalcId>
+            <Msg>Tájékoztatjuk, hogy a  "Csoportazonosító szám" mező kitöltése esetén a "Működő csoporthoz kívül maradó új adóalanyként kapcsolódom" menü, vagy a "Kérem a megadott csoportazonosító számú csoportból való kiválás engedélyezését" menü kitöltése kötelező. (Hibakód=&lt;C161&gt;)</Msg>
+        </Message>
+        <Message id="91" msgLevel="error">
+            <CalcId>356</CalcId>
+            <Msg>A áfa csoportból történő kiválás engedélyezéséhez kérjük adja meg az csoportazonosító számát és jelölje meg a kiválás időpontját.  (Hibakód=&lt;C018&gt;)</Msg>
+        </Message>
+        <Message id="92" msgLevel="error">
+            <CalcId>393</CalcId>
+            <Msg>Tájékoztatjuk, hogy amennyiben a "Kérem a megadott csoportazonosító számú csoportban kívül maradó adóalanykénti nyilvántartásom törlését" menü jelölt, abban az esetben szíveskedjen kitölteni a "Csoportazonosító szám" menüt is. (Hibakód=&lt;C136&gt;)</Msg>
+        </Message>
+        <Message id="93" msgLevel="error">
+            <CalcId>405</CalcId>
+            <Msg>Tájékoztatjuk, hogy a csoport csatlakozást jelölte, így más kérelmet (új kívülmaradó, csoportból kiváló tag, törlés csoportból) nem nyújthat be.  (Hibakód=&lt;C078&gt;)</Msg>
+        </Message>
+        <Message id="94" msgLevel="error">
+            <CalcId>283</CalcId>
+            <Msg>Kívül maradó adóalanyként történő csatlakozás esetén, kérjük töltse ki a kívül maradó adóalany nevét. (Hibakód=&lt;C139&gt;)</Msg>
+        </Message>
+        <Message id="95" msgLevel="error">
+            <CalcId>355</CalcId>
+            <Msg>Kérjük a kívül maradó adóalany valamennyi adatát (név és adószám) kitölteni szíveskedjen. (Hibakód=&lt;C017&gt;)</Msg>
+        </Message>
+        <Message id="96" msgLevel="error">
+            <CalcId>408</CalcId>
+            <Msg>A nyomtatványon feltüntetett adószámok megegyezőek, kérjük vizsgálja felül a kitöltést. (Hibakód=&lt;C081&gt;)</Msg>
+        </Message>
+        <Message id="97" msgLevel="error">
+            <CalcId>409</CalcId>
+            <Msg>Tájékoztatjuk, hogy a nyomtatványon szerepeltetett adószámok megegyezőek. Kérjük, vizsgálja felül a kitöltést. (Hibakód=&lt;C098&gt;)</Msg>
+        </Message>
+        <Message id="98" msgLevel="error">
+            <CalcId>407</CalcId>
+            <Msg>Tájékoztatjuk, hogy a csoportképviselő ls a kvül maradó adóalany adószáma nem egyezhet meg. Kérjük vizsgálja felül a kitöltést. (Hibakód=&lt;C080&gt;)</Msg>
+        </Message>
+        <Message id="99" msgLevel="error">
+            <CalcId>351</CalcId>
+            <CalcId>352</CalcId>
+            <CalcId>353</CalcId>
+            <Msg>Kapcsolt jogviszony megadása esetén, kérjük valamennyi mezőt töltse ki, kivétel ha csoportból való kiválás engedélyezését kéri. (Hibakód=&lt;C015&gt;)</Msg>
+        </Message>
+        <Message id="100" msgLevel="error">
+            <CalcId>384</CalcId>
+            <Msg>Új kérelem vagy működő csoporthoz kívül maradó új adóalanyként történő kapcsolódás bejelentése esetén legalább egy kapcsolt jogviszony kitöltése kötelező.  (Hibakód=&lt;C126&gt;)</Msg>
+        </Message>
+        <Message id="101" msgLevel="error">
+            <CalcId>394</CalcId>
+            <Msg>Tájékoztatjuk, hogy "Működő csoporthoz kívül maradó új adóalanyként kapcsolódom" menü kitöltése esetén legalább egy kapcsolt jogviszonyra vonatkozó menü kitöltése kötelező (Hibakód=&lt;C140&gt;)</Msg>
+        </Message>
+        <Message id="102" msgLevel="error">
+            <CalcId>290</CalcId>
+            <Msg>Tájékoztatjuk, hogy csatlakozó adóalanyként nem tölthetőek ki csoportos áfalanyiság létrehozásához történő hozzájárulás, valamint a kiválás engedélyezését kérő menük. (Hibakód=&lt;C142&gt;)</Msg>
+        </Message>
+        <Message id="103" msgLevel="error">
+            <CalcId>291</CalcId>
+            <Msg>Tájékoztatjuk, hogy kilépés jelölése esetén nem tölthetőek ki a csoport létrehozásához történő hozzájárulás, valamint a csoporthoz történő csatlakozás kérésére szolgáló menük. (Hibakód=&lt;C141&gt;)</Msg>
+        </Message>
+        <Message id="104" msgLevel="error">
+            <CalcId>292</CalcId>
+            <Msg>Tájékoztatjuk, hogy csoportazonosító szám kitöltése esetén nem járulhat hozzá a csoportos áfaalanyiság létrehozásához. (Hibakód=&lt;C143&gt;)</Msg>
+        </Message>
+        <Message id="105" msgLevel="error">
+            <CalcId>300</CalcId>
+            <Msg>Tájékoztatjuk, hogy a "Működő csoporthoz kívül maradó új adóalanyként kapcsolódom" menü jelölése esetén nem tölthető ki a "Kérem a megadott csoportazonosító számú csoportból való kiválás engedélyezését" menü és a "A csoportos áfaalanyiság létrehozásához, a csoportazonosító szám megállapításához hozzájárulok" menü. (Hibakód=&lt;C164&gt;)</Msg>
+        </Message>
+        <Message id="106" msgLevel="error">
+            <CalcId>406</CalcId>
+            <Msg>Tájékoztatjuk, hogy új csoport létrehozása mellett más a csoporttal kapcsolatos kérelmet (új kívülmaradó, csoportból kiváló tag, törlés csoportból) nem nyújthat be. (Hibakód=&lt;C079&gt;)</Msg>
+        </Message>
+        <Message id="107" msgLevel="error">
+            <CalcId>425</CalcId>
+            <Msg>Tájékoztatjuk, hogy "a csoportos áfaalanyiságon kívül maradó adóalany adataihoz, nyilatkozataihoz, a csoportból való kiváláshoz jelölése" esetén az új kívül maradó tag bejelentésérére, vagy a kiválásra, vagy a csatlakozásra vonatkozó menük kötelezően kitöltendőek. (Hibakód=&lt;C166&gt;)</Msg>
+        </Message>
+        <Message id="108" msgLevel="error">
+            <CalcId>354</CalcId>
+            <Msg>Ha az áfa csoporthoz kívül maradó adóalanyként kíván csatlakozni, kérjük adja meg a csoportazonosító számot, töltse ki a kívül maradó adóalanyra és kapcsolt vállalkozás(ai)ra vonatkozó adatokat. Kérjük jelölje, hogy kötelezettséget vállal az Áfa tv. 8.§ (7) bekezdésében  meghatározott kötelezettségek teljesítésére. (Hibakód=&lt;C016&gt;)</Msg>
+        </Message>
+        <Message id="109" msgLevel="error">
+            <CalcId>410</CalcId>
+            <Msg>Tájékoztatjuk, hogy új kérelem jelölése vagy kívül maradóként csatlakozás jelölése estén a kötelezettség vállalás kitöltése szükséges. (Hibakód=&lt;C099&gt;)</Msg>
+        </Message>
+        <Message id="110" msgLevel="error">
+            <CalcId>306</CalcId>
+            <Msg>A főlapon megadott "Benyújtott 17-os pótlapok száma" nem egyezik a ténylegesen rögzített pótlapok számával. (Hibakód=&lt;1077598/C103&gt;)</Msg>
+        </Message>
+        <Message id="111" msgLevel="error">
+            <CalcId>302</CalcId>
+            <CalcId>303</CalcId>
+            <Msg>Aktuális lap száma, melyet a dinamikus lapok lapszám mezőihez kell kötni.  (Hibakód=&lt;1077600/C124&gt;)</Msg>
+        </Message>
+        <Message id="112" msgLevel="error">
+            <CalcId>305</CalcId>
+            <Msg>A főlapon megadott "Benyújtott 16-os pótlapok száma" nem egyezik a ténylegesen rögzített pótlapok számával. (Hibakód=&lt;1077529/C102&gt;)</Msg>
+        </Message>
+        <Message id="113" msgLevel="error">
+            <CalcId>100006</CalcId>
+            <CalcId>100007</CalcId>
+            <Msg>A mező kötelezően kitöltendő! (Hibakód=&lt;m001&gt;)</Msg>
+        </Message>
+        <SearchFieldGroupId>120010</SearchFieldGroupId>
+        <SearchFieldGroupId>120012</SearchFieldGroupId>
+        <SearchFieldGroupId>120013</SearchFieldGroupId>
+        <SearchFieldGroupId>120014</SearchFieldGroupId>
+        <SearchFieldGroupId>120015</SearchFieldGroupId>
+        <SearchFieldGroupId>120016</SearchFieldGroupId>
+        <SearchFieldGroupId>120018</SearchFieldGroupId>
+        <SearchFieldGroupId>120020</SearchFieldGroupId>
+        <SearchFieldGroupId>120017</SearchFieldGroupId>
+        <SearchFieldGroupId>120019</SearchFieldGroupId>
+        <SearchFieldGroupId>120019</SearchFieldGroupId>
+        <SearchFieldGroupId>120019</SearchFieldGroupId>
+        <SearchFieldGroupId>120059</SearchFieldGroupId>
+        <SearchFieldGroupId>120060</SearchFieldGroupId>
+        <SearchFieldGroupId>120058</SearchFieldGroupId>
+        <SearchFieldGroupId>120063</SearchFieldGroupId>
+        <SearchFieldGroupId>120063</SearchFieldGroupId>
+        <SearchFieldGroupId>120063</SearchFieldGroupId>
+        <SpecDynGroup hasSimpleView="false" id="120042" index="6" name="Csoportos áfaalanyiság" sdgType="SPEC_DYNGROUP1">
+            <Detail chainId="120045" maxCount="1">
+                <fids>0BXXXXC010A</fids>
+                <fids>0BXXXXC011A</fids>
+                <fids>0BXXXXC012A</fids>
+                <fids>0BXXXXC013A</fids>
+                <fids>0BXXXXC007A</fids>
+                <fids>0BXXXXC008A</fids>
+                <fids>0BXXXXC009A</fids>
+                <fids>0BXXXXC014A</fids>
+                <fids>0BXXXXC015A</fids>
+                <fids>0BXXXXC016A</fids>
+                <fids>0BXXXXC006A</fids>
+                <fids>0BXXXXC017A</fids>
+            </Detail>
+            <dynamicFields>0BXXXXC007A</dynamicFields>
+            <dynamicFields>0BXXXXC019A</dynamicFields>
+            <dynamicFields>0BXXXXC009A</dynamicFields>
+            <dynamicFields>0BXXXXC025A</dynamicFields>
+            <dynamicFields>0BXXXXC003A</dynamicFields>
+            <dynamicFields>0BXXXXC015A</dynamicFields>
+            <dynamicFields>0BXXXXC005A</dynamicFields>
+            <dynamicFields>0BXXXXC017A</dynamicFields>
+            <dynamicFields>0BXXXXC010A</dynamicFields>
+            <dynamicFields>0BXXXXC022A</dynamicFields>
+            <dynamicFields>120049</dynamicFields>
+            <dynamicFields>0BXXXXC012A</dynamicFields>
+            <dynamicFields>0BXXXXC024A</dynamicFields>
+            <dynamicFields>0BXXXXC002A</dynamicFields>
+            <dynamicFields>0BXXXXC020A</dynamicFields>
+            <dynamicFields>0BXXXXC018A</dynamicFields>
+            <dynamicFields>0BXXXXC008A</dynamicFields>
+            <dynamicFields>0BXXXXC014A</dynamicFields>
+            <dynamicFields>0BXXXXC004A</dynamicFields>
+            <dynamicFields>0BXXXXC016A</dynamicFields>
+            <dynamicFields>0BXXXXC006A</dynamicFields>
+            <dynamicFields>0BXXXXC021A</dynamicFields>
+            <dynamicFields>0BXXXXC011A</dynamicFields>
+            <dynamicFields>0BXXXXC023A</dynamicFields>
+            <dynamicFields>0BXXXXC001A</dynamicFields>
+            <dynamicFields>0BXXXXC013A</dynamicFields>
+            <Header bottomFgId="120020" chainId="120043" topFgId="120017">
+                <KeyFid>0BXXXXC004A</KeyFid>
+                <KeyFid>0BXXXXC003A</KeyFid>
+            </Header>
+            <UIPart>
+                <UIPartItem id="120045" type="DETAIL"/>
+            </UIPart>
+        </SpecDynGroup>
+        <SpecDynGroup hasSimpleView="false" id="120054" index="7" name="Kívül maradó adóalany adatai" sdgType="SPEC_DYNGROUP1">
+            <Detail chainId="120061" maxCount="1">
+                <fids>0CXXXXC015A</fids>
+                <fids>0CXXXXC016A</fids>
+                <fids>0CXXXXC013A</fids>
+                <fids>0CXXXXC014A</fids>
+                <fids>0CXXXXC019A</fids>
+                <fids>0CXXXXC009A</fids>
+                <fids>0CXXXXC017A</fids>
+                <fids>0CXXXXC018A</fids>
+                <fids>0CXXXXC011A</fids>
+                <fids>0CXXXXC012A</fids>
+                <fids>0CXXXXC020A</fids>
+                <fids>0CXXXXC010A</fids>
+            </Detail>
+            <dynamicFields>0CXXXXC004A</dynamicFields>
+            <dynamicFields>0CXXXXC016A</dynamicFields>
+            <dynamicFields>0CXXXXC024A</dynamicFields>
+            <dynamicFields>0CXXXXC002A</dynamicFields>
+            <dynamicFields>0CXXXXC014A</dynamicFields>
+            <dynamicFields>0CXXXXC008A</dynamicFields>
+            <dynamicFields>0CXXXXC006A</dynamicFields>
+            <dynamicFields>0CXXXXC018A</dynamicFields>
+            <dynamicFields>120067</dynamicFields>
+            <dynamicFields>0CXXXXC011A</dynamicFields>
+            <dynamicFields>0CXXXXC023A</dynamicFields>
+            <dynamicFields>0CXXXXC001A</dynamicFields>
+            <dynamicFields>0CXXXXC021A</dynamicFields>
+            <dynamicFields>0CXXXXC015A</dynamicFields>
+            <dynamicFields>0CXXXXC005A</dynamicFields>
+            <dynamicFields>0CXXXXC013A</dynamicFields>
+            <dynamicFields>0CXXXXC003A</dynamicFields>
+            <dynamicFields>0CXXXXC019A</dynamicFields>
+            <dynamicFields>0CXXXXC009A</dynamicFields>
+            <dynamicFields>0CXXXXC017A</dynamicFields>
+            <dynamicFields>0CXXXXC007A</dynamicFields>
+            <dynamicFields>0CXXXXC022A</dynamicFields>
+            <dynamicFields>0CXXXXC012A</dynamicFields>
+            <dynamicFields>0CXXXXC020A</dynamicFields>
+            <dynamicFields>0CXXXXC010A</dynamicFields>
+            <Header bottomFgId="120060" chainId="120057" topFgId="120058">
+                <KeyFid>0CXXXXC008A</KeyFid>
+                <KeyFid>0CXXXXC007A</KeyFid>
+            </Header>
+            <UIPart>
+                <UIPartItem id="120061" type="DETAIL"/>
+            </UIPart>
+        </SpecDynGroup>
+        <ValuesList id="1412091463" index="1">
+            <List>U=Új adat</List>
+            <List>T=Korábbi adat törlése</List>
+            <Value>U</Value>
+            <Value>T</Value>
+        </ValuesList>
+        <ValuesList id="-2116771213" index="2">
+            <List>1=csoporttag kérelme.</List>
+            <List>3=bármely csoporttag a továbbiakban nem rendelkezik belföldi gazdasági célú letelepedési hellyel, vagy gazdasági célú letelepedési hely hiányában, a továbbiakban nem rendelkezik belföldi lakóhellyel, szokásos tartózkodási hellyel.</List>
+            <List>4=bármely csoporttag a továbbiakban nem minősül kapcsolt vállalkozásnak.</List>
+            <List>5=a csoporttagok nyilvántartási rendszere a továbbiakban nem alkalmas az Áfa tv. 8. § (3) bekezdésében említett belső és külső kapcsolatok egyértelmű, megbízható és maradéktalan elkülönítésére.</List>
+            <List>6=az Áfa tv. 8. § (6) bekezdésben meghatározott kötelezettségvállalásnak a kötelezettségvállaló nem tett eleget, nem képes eleget tenni.</List>
+            <List>7=az Áfa tv. 8. § (7) bekezdésében meghatározott kötelezettségvállalásnak a kötelezettséget vállaló nem tett eleget, nem képes eleget tenni.</List>
+            <Value>1</Value>
+            <Value>3</Value>
+            <Value>4</Value>
+            <Value>5</Value>
+            <Value>6</Value>
+            <Value>7</Value>
+        </ValuesList>
+        <ValuesList id="369348422" index="3">
+            <List>közvetlen</List>
+            <List>közvetett</List>
+            <List>meghatározó befolyás</List>
+            <List>az ügyvezetés egyezőségére tekintettel, illetve közeli hozzátartozók útján</List>
+            <Value>közvetlen</Value>
+            <Value>közvetett</Value>
+            <Value>meghatározó befolyás</Value>
+            <Value>az ügyvezetés egyezőségére tekintettel, illetve közeli hozzátartozók útján</Value>
+        </ValuesList>
+    </Form>
+</WebUIModel>
